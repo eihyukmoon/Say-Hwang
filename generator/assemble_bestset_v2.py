@@ -11,7 +11,7 @@ AudioSegment.converter = r"C:\ffmpeg\bin\ffmpeg.exe"
 class KoreanPhoneticVectorizer:
     def __init__(self):
         self.CHO_GROUPS = [{'ㄱ', 'ㄲ', 'ㅋ'}, {'ㄷ', 'ㄸ', 'ㅌ'}, {'ㅂ', 'ㅃ', 'ㅍ'}, {'ㅈ', 'ㅉ', 'ㅊ'}, {'ㅅ', 'ㅆ'}, {'ㅇ', 'ㅎ'}, {'ㄴ', 'ㄹ', 'ㅁ'}]
-        self.JUNG_GROUPS = [{'ㅏ', 'ㅑ'}, {'ㅓ', 'ㅕ'}, {'ㅗ', 'ㅛ'}, {'ㅜ', 'ㅠ'}, {'ㅡ', 'ㅣ'}, {'ㅐ', 'ㅔ', 'ㅒ', 'ㅖ'}, {'ㅘ', 'ㅚ', 'ㅙ', 'ㅞ'}, {'ㅝ', 'ㅟ', 'ㅢ'}]
+        self.JUNG_GROUPS = [{'ㅘ','ㅏ', 'ㅑ'}, {'ㅝ','ㅓ', 'ㅕ'}, {'ㅚ','ㅗ', 'ㅛ'}, {'ㅜ', 'ㅠ','ㅡ'}, {'ㅟ','ㅣ', 'ㅢ'}, {'ㅐ', 'ㅔ', 'ㅒ', 'ㅖ','ㅙ', 'ㅞ'}]
     
     def decompose(self, char):
         if '가' <= char <= '힣': return j2hcj(h2j(char))
@@ -29,7 +29,7 @@ class KoreanPhoneticVectorizer:
         d_cho, d_jung, d_jong = (d_parts + '   ')[:3]
 
         score = 0
-        if t_jung != d_jung: score += 10 if self._is_same_group(t_jung, d_jung, self.JUNG_GROUPS) else 50
+        if t_jung != d_jung: score += 10 if self._is_same_group(t_jung, d_jung, self.JUNG_GROUPS) else 70
         if t_cho != d_cho: score += 5 if self._is_same_group(t_cho, d_cho, self.CHO_GROUPS) else 30
         if t_jong != d_jong:
             if (t_jong == ' ') != (d_jong == ' '): score += 15
@@ -127,7 +127,7 @@ class GoldenAssembler:
                 if start + dur > len(full_audio):
                     dur = len(full_audio) - start
                 
-                dur = min(dur, 300)
+                dur = min(dur, 150)
                 
                 clip = full_audio[start : start + dur]
                 clip = self.match_target_amplitude(clip, target_dBFS=-20.0)
@@ -150,4 +150,4 @@ class GoldenAssembler:
 
 if __name__ == "__main__": 
     assembler = GoldenAssembler(audio_folder="./youtube_audio", json_path="./single_best.json")
-    assembler.assemble("잘 부탁드립니다")
+    assembler.assemble("안녕하세요")
