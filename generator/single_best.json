@@ -1,39 +1,33 @@
 [
     {
-        "src": "K21IML4SDik",
-        "word": "i",
-        "start_ms": 25190,
-        "duration_ms": 210
-    },
-    {
         "src": "-vR4GyI0xTk",
         "word": "간",
-        "start_ms": 12550,
-        "duration_ms": 280
+        "start_ms": 12590,
+        "duration_ms": 240
     },
     {
         "src": "KC4R8nSBsNs",
         "word": "갈",
-        "start_ms": 5780,
-        "duration_ms": 290
+        "start_ms": 5800,
+        "duration_ms": 230
     },
     {
         "src": "B-bNigfnoTs",
         "word": "감",
         "start_ms": 54700,
-        "duration_ms": 380
+        "duration_ms": 300
     },
     {
         "src": "B-bNigfnoTs",
         "word": "갑",
-        "start_ms": 17490,
-        "duration_ms": 310
+        "start_ms": 17520,
+        "duration_ms": 280
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "강",
-        "start_ms": 16400,
-        "duration_ms": 450
+        "start_ms": 16420,
+        "duration_ms": 430
     },
     {
         "src": "n4B14Nx8UXI",
@@ -50,8 +44,8 @@
     {
         "src": "5ZqHdPgFZFg",
         "word": "걱",
-        "start_ms": 7200,
-        "duration_ms": 340
+        "start_ms": 7270,
+        "duration_ms": 270
     },
     {
         "src": "lE5ZcbgCxuQ",
@@ -156,12 +150,6 @@
         "duration_ms": 190
     },
     {
-        "src": "5ZqHdPgFZFg",
-        "word": "기",
-        "start_ms": 5700,
-        "duration_ms": 200
-    },
-    {
         "src": "KgHYsw3ghnQ",
         "word": "긴",
         "start_ms": 21410,
@@ -208,18 +196,6 @@
         "word": "께",
         "start_ms": 30620,
         "duration_ms": 500
-    },
-    {
-        "src": "py2ZU4SqtgM",
-        "word": "끄",
-        "start_ms": 39050,
-        "duration_ms": 240
-    },
-    {
-        "src": "WPN_phPy9aA",
-        "word": "끊",
-        "start_ms": 50340,
-        "duration_ms": 200
     },
     {
         "src": "py2ZU4SqtgM",
@@ -294,6 +270,12 @@
         "duration_ms": 410
     },
     {
+        "src": "5zCgDPxZPvI",
+        "word": "단",
+        "start_ms": 46598,
+        "duration_ms": 558
+    },
+    {
         "src": "n4B14Nx8UXI",
         "word": "닮",
         "start_ms": 21700,
@@ -348,28 +330,16 @@
         "duration_ms": 230
     },
     {
-        "src": "WPN_phPy9aA",
-        "word": "돌",
-        "start_ms": 17000,
-        "duration_ms": 250
-    },
-    {
-        "src": "n4B14Nx8UXI",
-        "word": "되",
-        "start_ms": 10870,
-        "duration_ms": 230
-    },
-    {
         "src": "5zCgDPxZPvI",
         "word": "된",
         "start_ms": 42650,
-        "duration_ms": 200
+        "duration_ms": 220
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "될",
         "start_ms": 30700,
-        "duration_ms": 240
+        "duration_ms": 150
     },
     {
         "src": "-vR4GyI0xTk",
@@ -393,7 +363,7 @@
         "src": "o4ZMG18vdEk",
         "word": "등",
         "start_ms": 11700,
-        "duration_ms": 200
+        "duration_ms": 250
     },
     {
         "src": "n4B14Nx8UXI",
@@ -410,8 +380,8 @@
     {
         "src": "-d-P7D0jPAc",
         "word": "때",
-        "start_ms": 36850,
-        "duration_ms": 200
+        "start_ms": 36860,
+        "duration_ms": 190
     },
     {
         "src": "WPN_phPy9aA",
@@ -488,8 +458,8 @@
     {
         "src": "KgHYsw3ghnQ",
         "word": "마",
-        "start_ms": 7230,
-        "duration_ms": 300
+        "start_ms": 7290,
+        "duration_ms": 240
     },
     {
         "src": "py2ZU4SqtgM",
@@ -508,12 +478,6 @@
         "word": "많",
         "start_ms": 46160,
         "duration_ms": 270
-    },
-    {
-        "src": "KgHYsw3ghnQ",
-        "word": "매",
-        "start_ms": 9930,
-        "duration_ms": 200
     },
     {
         "src": "KgHYsw3ghnQ",
@@ -597,12 +561,12 @@
         "src": "BSZHxXzF9wU",
         "word": "믿",
         "start_ms": 8010,
-        "duration_ms": 370
+        "duration_ms": 360
     },
     {
-        "src": "gpVFMvLyqQs",
+        "src": "-vR4GyI0xTk",
         "word": "바",
-        "start_ms": 37910,
+        "start_ms": 18525,
         "duration_ms": 260
     },
     {
@@ -614,8 +578,8 @@
     {
         "src": "lE5ZcbgCxuQ",
         "word": "방",
-        "start_ms": 38600,
-        "duration_ms": 300
+        "start_ms": 38700,
+        "duration_ms": 200
     },
     {
         "src": "py2ZU4SqtgM",
@@ -668,955 +632,763 @@
     {
         "src": "K21IML4SDik",
         "word": "부",
-        "start_ms": 6330.0,
-        "duration_ms": 140
+        "start_ms": 6270,
+        "duration_ms": 180
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "불",
-        "start_ms": 28980.0,
-        "duration_ms": 120.0
+        "start_ms": 28870,
+        "duration_ms": 270
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "비",
-        "start_ms": 23410.0,
-        "duration_ms": 110.0
+        "start_ms": 23370,
+        "duration_ms": 180
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "빛",
-        "start_ms": 52550.0,
-        "duration_ms": 220.0
+        "start_ms": 52510,
+        "duration_ms": 280
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "빠",
-        "start_ms": 21280.0,
-        "duration_ms": 160.0
+        "start_ms": 21250,
+        "duration_ms": 190
     },
     {
         "src": "gpVFMvLyqQs",
         "word": "빨",
-        "start_ms": 38820.0,
-        "duration_ms": 290
-    },
-    {
-        "src": "WPN_phPy9aA",
-        "word": "빼",
-        "start_ms": 37620.0,
-        "duration_ms": 140.0
+        "start_ms": 38820,
+        "duration_ms": 360
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "뻔",
-        "start_ms": 25590.0,
-        "duration_ms": 250
+        "start_ms": 25600,
+        "duration_ms": 300
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "뽕",
-        "start_ms": 16950.0,
-        "duration_ms": 130.0
+        "start_ms": 16850,
+        "duration_ms": 230
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "뿌",
-        "start_ms": 44240.0,
-        "duration_ms": 140
+        "start_ms": 44190,
+        "duration_ms": 180
     },
     {
         "src": "gpVFMvLyqQs",
         "word": "쁘",
-        "start_ms": 38190.0,
-        "duration_ms": 160.0
+        "start_ms": 38170,
+        "duration_ms": 220
     },
     {
         "src": "-vR4GyI0xTk",
         "word": "사",
-        "start_ms": 7500.0,
+        "start_ms": 7500,
         "duration_ms": 280
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "살",
-        "start_ms": 3040.0,
+        "start_ms": 3030,
         "duration_ms": 230
     },
     {
         "src": "B-bNigfnoTs",
         "word": "삶",
-        "start_ms": 50760.0,
-        "duration_ms": 310
+        "start_ms": 50700,
+        "duration_ms": 300
     },
     {
         "src": "WPN_phPy9aA",
         "word": "삼",
-        "start_ms": 54240.0,
-        "duration_ms": 290.0
+        "start_ms": 54200,
+        "duration_ms": 300
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "상",
-        "start_ms": 26030.0,
-        "duration_ms": 240
+        "start_ms": 25950,
+        "duration_ms": 350
     },
     {
         "src": "m4qCZ6jAfaw",
         "word": "샌",
-        "start_ms": 11430.0,
-        "duration_ms": 240.0
+        "start_ms": 11430,
+        "duration_ms": 240
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "생",
-        "start_ms": 1310.0,
+        "start_ms": 1310,
         "duration_ms": 250
     },
     {
         "src": "KC4R8nSBsNs",
         "word": "서",
-        "start_ms": 5310.0,
-        "duration_ms": 320
+        "start_ms": 5310,
+        "duration_ms": 340
     },
     {
         "src": "KC4R8nSBsNs",
         "word": "석",
-        "start_ms": 9750.0,
-        "duration_ms": 110.0
+        "start_ms": 9750,
+        "duration_ms": 180
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "선",
-        "start_ms": 11820.0,
-        "duration_ms": 180
+        "start_ms": 11700,
+        "duration_ms": 300
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "설",
-        "start_ms": 15780.0,
-        "duration_ms": 230.0
+        "start_ms": 15790,
+        "duration_ms": 250
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "성",
-        "start_ms": 9520.0,
+        "start_ms": 9520,
         "duration_ms": 260
     },
     {
         "src": "BSZHxXzF9wU",
         "word": "세",
-        "start_ms": 1950.0,
-        "duration_ms": 360
+        "start_ms": 1970,
+        "duration_ms": 340
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "소",
-        "start_ms": 35890.0,
-        "duration_ms": 830.0
+        "start_ms": 35890,
+        "duration_ms": 830
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "속",
-        "start_ms": 14800.0,
-        "duration_ms": 420.0
+        "start_ms": 14800,
+        "duration_ms": 420
     },
     {
         "src": "o4ZMG18vdEk",
         "word": "손",
-        "start_ms": 4190.0,
-        "duration_ms": 450
+        "start_ms": 4290,
+        "duration_ms": 360
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "수",
-        "start_ms": 19300.0,
+        "start_ms": 19300,
         "duration_ms": 400
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "숙",
-        "start_ms": 35610.0,
+        "start_ms": 35610,
         "duration_ms": 260
-    },
-    {
-        "src": "m4qCZ6jAfaw",
-        "word": "순",
-        "start_ms": 27270.0,
-        "duration_ms": 120
-    },
-    {
-        "src": "lE5ZcbgCxuQ",
-        "word": "술",
-        "start_ms": 4980.0,
-        "duration_ms": 130
     },
     {
         "src": "-d-P7D0jPAc",
         "word": "스",
-        "start_ms": 40.0,
-        "duration_ms": 180
+        "start_ms": 30,
+        "duration_ms": 190
     },
     {
         "src": "LEcpTw1Fh10",
         "word": "습",
-        "start_ms": 9840.0,
-        "duration_ms": 100.0
+        "start_ms": 9800,
+        "duration_ms": 200
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "시",
-        "start_ms": 26170.0,
+        "start_ms": 26170,
         "duration_ms": 220
-    },
-    {
-        "src": "py2ZU4SqtgM",
-        "word": "식",
-        "start_ms": 25660.0,
-        "duration_ms": 190
     },
     {
         "src": "BSZHxXzF9wU",
         "word": "신",
-        "start_ms": 10720.0,
-        "duration_ms": 210.0
+        "start_ms": 10650,
+        "duration_ms": 250
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "실",
-        "start_ms": 24010.0,
-        "duration_ms": 280.0
+        "start_ms": 24010,
+        "duration_ms": 280
     },
     {
         "src": "VXlAOE_ZSq0",
         "word": "심",
-        "start_ms": 35600.0,
-        "duration_ms": 290.0
+        "start_ms": 35550,
+        "duration_ms": 360
     },
     {
         "src": "o4ZMG18vdEk",
         "word": "싶",
-        "start_ms": 27480.0,
+        "start_ms": 27480,
         "duration_ms": 300
     },
     {
         "src": "K21IML4SDik",
         "word": "싸",
-        "start_ms": 28300.0,
-        "duration_ms": 200
+        "start_ms": 28300,
+        "duration_ms": 250
     },
     {
         "src": "BSZHxXzF9wU",
         "word": "써",
-        "start_ms": 15990.0,
-        "duration_ms": 180
+        "start_ms": 16000,
+        "duration_ms": 220
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "씨",
-        "start_ms": 56760.0,
-        "duration_ms": 400
+        "start_ms": 56760,
+        "duration_ms": 460
     },
     {
         "src": "vZN6TTgGZGs",
         "word": "씩",
-        "start_ms": 9440.0,
+        "start_ms": 9400,
         "duration_ms": 400
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "아",
-        "start_ms": 58440.0,
-        "duration_ms": 400
+        "start_ms": 58500,
+        "duration_ms": 500
+    },
+    {
+        "src": "5ZqHdPgFZFg",
+        "word": "네",
+        "start_ms": 1839,
+        "duration_ms": 180
     },
     {
         "src": "m4qCZ6jAfaw",
         "word": "안",
-        "start_ms": 53510.0,
-        "duration_ms": 520.0
+        "start_ms": 53510,
+        "duration_ms": 350
     },
     {
         "src": "-vR4GyI0xTk",
-        "word": "았",
-        "start_ms": 10190.0,
-        "duration_ms": 150
-    },
-    {
-        "src": "KgHYsw3ghnQ",
-        "word": "애",
-        "start_ms": 17720.0,
-        "duration_ms": 250
-    },
-    {
-        "src": "oOMuTNi2_4Q",
-        "word": "앨",
-        "start_ms": 17320.0,
-        "duration_ms": 240.0
-    },
-    {
-        "src": "5zCgDPxZPvI",
         "word": "야",
-        "start_ms": 53600.0,
-        "duration_ms": 400
+        "start_ms": 16423,
+        "duration_ms": 300
+    },
+    {
+        "src": "o4ZMG18vdEk",
+        "word": "쿠",
+        "start_ms": 21450,
+        "duration_ms": 440
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "이",
+        "start_ms": 24012,
+        "duration_ms": 410
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "니",
+        "start_ms": 29085,
+        "duration_ms": 700
     },
     {
         "src": "oOMuTNi2_4Q",
         "word": "약",
-        "start_ms": 7920.0,
-        "duration_ms": 380
+        "start_ms": 7920,
+        "duration_ms": 350
     },
     {
         "src": "LEcpTw1Fh10",
         "word": "양",
-        "start_ms": 38960.0,
-        "duration_ms": 270.0
+        "start_ms": 38800,
+        "duration_ms": 400
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "어",
-        "start_ms": 3660.0,
-        "duration_ms": 400
+        "start_ms": 3700,
+        "duration_ms": 600
     },
     {
         "src": "KC4R8nSBsNs",
         "word": "억",
-        "start_ms": 22200.0,
-        "duration_ms": 170.0
+        "start_ms": 22100,
+        "duration_ms": 300
     },
     {
         "src": "gpVFMvLyqQs",
         "word": "언",
-        "start_ms": 20300.0,
+        "start_ms": 20300,
         "duration_ms": 250
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "얼",
-        "start_ms": 3870.0,
-        "duration_ms": 210
+        "start_ms": 3850,
+        "duration_ms": 200
     },
     {
         "src": "K21IML4SDik",
         "word": "엄",
-        "start_ms": 12620.0,
-        "duration_ms": 140.0
+        "start_ms": 12530,
+        "duration_ms": 280
     },
     {
         "src": "WPN_phPy9aA",
         "word": "업",
-        "start_ms": 56100.0,
-        "duration_ms": 120.0
+        "start_ms": 56080,
+        "duration_ms": 170
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "없",
-        "start_ms": 20060.0,
-        "duration_ms": 140
+        "start_ms": 19950,
+        "duration_ms": 230
     },
     {
         "src": "-d-P7D0jPAc",
         "word": "에",
-        "start_ms": 37250.0,
-        "duration_ms": 400
-    },
-    {
-        "src": "n4B14Nx8UXI",
-        "word": "엔",
-        "start_ms": 30130.0,
-        "duration_ms": 120.0
+        "start_ms": 37300,
+        "duration_ms": 350
     },
     {
         "src": "VXlAOE_ZSq0",
         "word": "여",
-        "start_ms": 21000.0,
-        "duration_ms": 240
+        "start_ms": 20900,
+        "duration_ms": 350
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "연",
-        "start_ms": 7880.0,
-        "duration_ms": 280
+        "start_ms": 7880,
+        "duration_ms": 260
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "옆",
-        "start_ms": 36230.0,
-        "duration_ms": 170.0
+        "start_ms": 36200,
+        "duration_ms": 220
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "예",
-        "start_ms": 11410.0,
-        "duration_ms": 450
+        "start_ms": 11400,
+        "duration_ms": 430
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "오",
-        "start_ms": 27860.0,
-        "duration_ms": 210
+        "start_ms": 27820,
+        "duration_ms": 240
     },
     {
         "src": "KC4R8nSBsNs",
         "word": "온",
-        "start_ms": 17060.0,
-        "duration_ms": 140.0
+        "start_ms": 16930,
+        "duration_ms": 270
     },
     {
         "src": "BSZHxXzF9wU",
         "word": "올",
-        "start_ms": 6900.0,
-        "duration_ms": 180
+        "start_ms": 6800,
+        "duration_ms": 230
     },
     {
         "src": "-vR4GyI0xTk",
         "word": "와",
-        "start_ms": 3030.0,
-        "duration_ms": 530.0
+        "start_ms": 3050,
+        "duration_ms": 510
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "왜",
-        "start_ms": 21140.0,
-        "duration_ms": 690
+        "start_ms": 21150,
+        "duration_ms": 680
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "요",
-        "start_ms": 16940.0,
-        "duration_ms": 400
+        "start_ms": 16850,
+        "duration_ms": 550
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "용",
-        "start_ms": 29600.0,
-        "duration_ms": 120
+        "start_ms": 29520,
+        "duration_ms": 180
     },
     {
         "src": "VXlAOE_ZSq0",
         "word": "우",
-        "start_ms": 9200.0,
-        "duration_ms": 400
+        "start_ms": 9150,
+        "duration_ms": 350
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "움",
-        "start_ms": 13570.0,
-        "duration_ms": 140.0
+        "start_ms": 13500,
+        "duration_ms": 170
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "웃",
-        "start_ms": 37100.0,
-        "duration_ms": 300.0
+        "start_ms": 37000,
+        "duration_ms": 300
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "원",
-        "start_ms": 12960.0,
+        "start_ms": 12970,
         "duration_ms": 340
     },
     {
         "src": "o4ZMG18vdEk",
         "word": "월",
-        "start_ms": 9530.0,
-        "duration_ms": 280.0
+        "start_ms": 9500,
+        "duration_ms": 290
     },
     {
         "src": "5ZqHdPgFZFg",
         "word": "위",
-        "start_ms": 4180.0,
-        "duration_ms": 250
+        "start_ms": 4180,
+        "duration_ms": 220
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "유",
-        "start_ms": 31850.0,
-        "duration_ms": 250
+        "start_ms": 31800,
+        "duration_ms": 230
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "은",
-        "start_ms": 13730.0,
-        "duration_ms": 580.0
+        "start_ms": 13730,
+        "duration_ms": 580
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "을",
-        "start_ms": 29420.0,
-        "duration_ms": 240
+        "start_ms": 29400,
+        "duration_ms": 230
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "음",
-        "start_ms": 13940.0,
-        "duration_ms": 400
+        "start_ms": 13940,
+        "duration_ms": 410
     },
     {
         "src": "K21IML4SDik",
         "word": "응",
-        "start_ms": 8180.0,
-        "duration_ms": 470.0
-    },
-    {
-        "src": "B-bNigfnoTs",
-        "word": "이",
-        "start_ms": 42910.0,
-        "duration_ms": 250
+        "start_ms": 8180,
+        "duration_ms": 470
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "인",
-        "start_ms": 19430.0,
+        "start_ms": 19430,
         "duration_ms": 250
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "일",
-        "start_ms": 30350.0,
-        "duration_ms": 150
+        "start_ms": 30220,
+        "duration_ms": 210
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "자",
-        "start_ms": 43560.0,
-        "duration_ms": 400
+        "start_ms": 43560,
+        "duration_ms": 440
     },
     {
         "src": "LEcpTw1Fh10",
         "word": "잖",
-        "start_ms": 51000.0,
-        "duration_ms": 120.0
+        "start_ms": 50920,
+        "duration_ms": 255
     },
     {
         "src": "oOMuTNi2_4Q",
         "word": "잘",
-        "start_ms": 50540.0,
-        "duration_ms": 300
-    },
-    {
-        "src": "n4B14Nx8UXI",
-        "word": "잠",
-        "start_ms": 42260.0,
-        "duration_ms": 340.0
+        "start_ms": 50530,
+        "duration_ms": 320
     },
     {
         "src": "B-bNigfnoTs",
         "word": "잡",
-        "start_ms": 10920.0,
-        "duration_ms": 230.0
+        "start_ms": 10920,
+        "duration_ms": 230
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "저",
-        "start_ms": 10500.0,
-        "duration_ms": 300
+        "start_ms": 10550,
+        "duration_ms": 230
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "적",
-        "start_ms": 20330.0,
-        "duration_ms": 130
+        "start_ms": 20300,
+        "duration_ms": 200
     },
     {
         "src": "VXlAOE_ZSq0",
         "word": "전",
-        "start_ms": 7700.0,
-        "duration_ms": 400
+        "start_ms": 7860,
+        "duration_ms": 290
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "절",
-        "start_ms": 14870.0,
-        "duration_ms": 110.0
+        "start_ms": 14780,
+        "duration_ms": 220
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "정",
-        "start_ms": 6290.0,
-        "duration_ms": 320
+        "start_ms": 6400,
+        "duration_ms": 430
     },
     {
         "src": "m4qCZ6jAfaw",
         "word": "제",
-        "start_ms": 13590.0,
+        "start_ms": 13590,
         "duration_ms": 230
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "져",
-        "start_ms": 17380.0,
-        "duration_ms": 840.0
+        "start_ms": 17380,
+        "duration_ms": 840
     },
     {
         "src": "oOMuTNi2_4Q",
         "word": "조",
-        "start_ms": 54710.0,
-        "duration_ms": 190
+        "start_ms": 54620,
+        "duration_ms": 240
     },
     {
         "src": "B-bNigfnoTs",
         "word": "좋",
-        "start_ms": 16540.0,
+        "start_ms": 16540,
         "duration_ms": 320
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "죠",
-        "start_ms": 660.0,
-        "duration_ms": 530.0
+        "start_ms": 660,
+        "duration_ms": 530
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "준",
-        "start_ms": 29710.0,
-        "duration_ms": 140.0
+        "start_ms": 29710,
+        "duration_ms": 190
     },
     {
         "src": "oOMuTNi2_4Q",
         "word": "중",
-        "start_ms": 14960.0,
-        "duration_ms": 120
+        "start_ms": 14850,
+        "duration_ms": 230
     },
     {
         "src": "gpVFMvLyqQs",
         "word": "쥐",
-        "start_ms": 32120.0,
-        "duration_ms": 350
+        "start_ms": 32120,
+        "duration_ms": 310
     },
     {
-        "src": "VXlAOE_ZSq0",
-        "word": "즉",
-        "start_ms": 14380.0,
-        "duration_ms": 280.0
-    },
-    {
-        "src": "NzXLKDKfAqw",
+        "src": "lE5ZcbgCxuQ",
         "word": "지",
-        "start_ms": 24470.0,
-        "duration_ms": 300
+        "start_ms": 2267,
+        "duration_ms": 700
     },
     {
         "src": "-d-P7D0jPAc",
         "word": "직",
-        "start_ms": 35890.0,
+        "start_ms": 35890,
         "duration_ms": 140
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "진",
-        "start_ms": 20610.0,
-        "duration_ms": 160
+        "start_ms": 20600,
+        "duration_ms": 300
     },
     {
         "src": "-vR4GyI0xTk",
         "word": "질",
-        "start_ms": 20300.0,
+        "start_ms": 20300,
         "duration_ms": 270
-    },
-    {
-        "src": "KgHYsw3ghnQ",
-        "word": "집",
-        "start_ms": 16900.0,
-        "duration_ms": 100
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "짜",
-        "start_ms": 20790.0,
-        "duration_ms": 480.0
-    },
-    {
-        "src": "m4qCZ6jAfaw",
-        "word": "짝",
-        "start_ms": 20580.0,
-        "duration_ms": 270.0
+        "start_ms": 20790,
+        "duration_ms": 480
     },
     {
         "src": "uMN95bmCMq0",
         "word": "쪽",
-        "start_ms": 11890.0,
-        "duration_ms": 330.0
+        "start_ms": 11890,
+        "duration_ms": 330
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "찍",
-        "start_ms": 21900.0,
-        "duration_ms": 330
-    },
-    {
-        "src": "WPN_phPy9aA",
-        "word": "차",
-        "start_ms": 39060.0,
-        "duration_ms": 200
+        "start_ms": 22200,
+        "duration_ms": 300
     },
     {
         "src": "B-bNigfnoTs",
         "word": "참",
-        "start_ms": 47720.0,
-        "duration_ms": 320
-    },
-    {
-        "src": "-vR4GyI0xTk",
-        "word": "첩",
-        "start_ms": 12830.0,
-        "duration_ms": 120.0
+        "start_ms": 47720,
+        "duration_ms": 430
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "첸",
-        "start_ms": 16050.0,
+        "start_ms": 16050,
         "duration_ms": 340
-    },
-    {
-        "src": "-vR4GyI0xTk",
-        "word": "촌",
-        "start_ms": 8340.0,
-        "duration_ms": 150
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "총",
-        "start_ms": 7150.0,
-        "duration_ms": 190.0
+        "start_ms": 7100,
+        "duration_ms": 200
     },
     {
         "src": "m4qCZ6jAfaw",
         "word": "치",
-        "start_ms": 41370.0,
-        "duration_ms": 480.0
-    },
-    {
-        "src": "lE5ZcbgCxuQ",
-        "word": "카",
-        "start_ms": 1110.0,
-        "duration_ms": 150
+        "start_ms": 41370,
+        "duration_ms": 480
     },
     {
         "src": "NzXLKDKfAqw",
         "word": "켰",
-        "start_ms": 31050.0,
-        "duration_ms": 140.0
+        "start_ms": 30950,
+        "duration_ms": 300
     },
     {
         "src": "lE5ZcbgCxuQ",
         "word": "코",
-        "start_ms": 23170.0,
-        "duration_ms": 260
+        "start_ms": 23100,
+        "duration_ms": 330
     },
     {
         "src": "n4B14Nx8UXI",
         "word": "큰",
-        "start_ms": 22260.0,
-        "duration_ms": 260.0
-    },
-    {
-        "src": "VXlAOE_ZSq0",
-        "word": "킹",
-        "start_ms": 580.0,
-        "duration_ms": 210.0
+        "start_ms": 22200,
+        "duration_ms": 350
     },
     {
         "src": "B-bNigfnoTs",
         "word": "택",
-        "start_ms": 29010.0,
-        "duration_ms": 220.0
-    },
-    {
-        "src": "NzXLKDKfAqw",
-        "word": "터",
-        "start_ms": 37450.0,
+        "start_ms": 29100,
         "duration_ms": 200
-    },
-    {
-        "src": "lE5ZcbgCxuQ",
-        "word": "텐",
-        "start_ms": 7200.0,
-        "duration_ms": 130
     },
     {
         "src": "LEcpTw1Fh10",
         "word": "톤",
-        "start_ms": 8590.0,
-        "duration_ms": 450.0
+        "start_ms": 8500,
+        "duration_ms": 500
     },
     {
         "src": "m4qCZ6jAfaw",
         "word": "퉁",
-        "start_ms": 20880.0,
-        "duration_ms": 330.0
-    },
-    {
-        "src": "KgHYsw3ghnQ",
-        "word": "특",
-        "start_ms": 10160.0,
-        "duration_ms": 190.0
-    },
-    {
-        "src": "m4qCZ6jAfaw",
-        "word": "티",
-        "start_ms": 39040.0,
-        "duration_ms": 200
-    },
-    {
-        "src": "KgHYsw3ghnQ",
-        "word": "파",
-        "start_ms": 16060.0,
-        "duration_ms": 100
+        "start_ms": 20880,
+        "duration_ms": 330
     },
     {
         "src": "-vR4GyI0xTk",
         "word": "판",
-        "start_ms": 25230.0,
-        "duration_ms": 170.0
+        "start_ms": 25140,
+        "duration_ms": 260
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "팔",
-        "start_ms": 29280.0,
-        "duration_ms": 210
-    },
-    {
-        "src": "vZN6TTgGZGs",
-        "word": "패",
-        "start_ms": 6440.0,
-        "duration_ms": 230.0
-    },
-    {
-        "src": "K21IML4SDik",
-        "word": "퍽",
-        "start_ms": 17220.0,
-        "duration_ms": 100.0
-    },
-    {
-        "src": "n4B14Nx8UXI",
-        "word": "편",
-        "start_ms": 27990.0,
-        "duration_ms": 220.0
+        "start_ms": 29100,
+        "duration_ms": 400
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "폭",
-        "start_ms": 18420.0,
-        "duration_ms": 160.0
+        "start_ms": 18350,
+        "duration_ms": 230
     },
     {
         "src": "B-bNigfnoTs",
         "word": "표",
-        "start_ms": 7640.0,
-        "duration_ms": 350
+        "start_ms": 7620,
+        "duration_ms": 360
     },
     {
         "src": "5zCgDPxZPvI",
         "word": "푸",
-        "start_ms": 55610.0,
-        "duration_ms": 300.0
-    },
-    {
-        "src": "B-bNigfnoTs",
-        "word": "풀",
-        "start_ms": 8370.0,
-        "duration_ms": 370.0
+        "start_ms": 55700,
+        "duration_ms": 210
     },
     {
         "src": "m4qCZ6jAfaw",
         "word": "품",
-        "start_ms": 23250.0,
-        "duration_ms": 280
-    },
-    {
-        "src": "lE5ZcbgCxuQ",
-        "word": "피",
-        "start_ms": 43510.0,
-        "duration_ms": 200.0
-    },
-    {
-        "src": "lE5ZcbgCxuQ",
-        "word": "필",
-        "start_ms": 6800.0,
-        "duration_ms": 140
-    },
-    {
-        "src": "-vR4GyI0xTk",
-        "word": "하",
-        "start_ms": 2470.0,
-        "duration_ms": 200
+        "start_ms": 23320,
+        "duration_ms": 250
     },
     {
         "src": "py2ZU4SqtgM",
         "word": "한",
-        "start_ms": 180.0,
-        "duration_ms": 230
+        "start_ms": 120,
+        "duration_ms": 330
     },
     {
         "src": "-d-P7D0jPAc",
         "word": "할",
-        "start_ms": 55100.0,
-        "duration_ms": 130
+        "start_ms": 55000,
+        "duration_ms": 230
     },
     {
         "src": "gpVFMvLyqQs",
         "word": "해",
-        "start_ms": 39610.0,
+        "start_ms": 39610,
         "duration_ms": 500
     },
     {
         "src": "KgHYsw3ghnQ",
         "word": "행",
-        "start_ms": 18600.0,
-        "duration_ms": 160
-    },
-    {
-        "src": "LEcpTw1Fh10",
-        "word": "허",
-        "start_ms": 35320.0,
-        "duration_ms": 360.0
+        "start_ms": 18500,
+        "duration_ms": 230
     },
     {
         "src": "Kdgg9NMIiFE",
         "word": "혁",
-        "start_ms": 26320.0,
+        "start_ms": 26320,
         "duration_ms": 280
-    },
-    {
-        "src": "KgHYsw3ghnQ",
-        "word": "혐",
-        "start_ms": 20960.0,
-        "duration_ms": 110.0
     },
     {
         "src": "B-bNigfnoTs",
         "word": "형",
-        "start_ms": 30230.0,
-        "duration_ms": 490
-    },
-    {
-        "src": "VXlAOE_ZSq0",
-        "word": "홍",
-        "start_ms": 23370.0,
-        "duration_ms": 170.0
-    },
-    {
-        "src": "-d-P7D0jPAc",
-        "word": "획",
-        "start_ms": 26990.0,
-        "duration_ms": 140.0
-    },
-    {
-        "src": "-vR4GyI0xTk",
-        "word": "흙",
-        "start_ms": 20000.0,
-        "duration_ms": 160.0
-    },
-    {
-        "src": "lE5ZcbgCxuQ",
-        "word": "히",
-        "start_ms": 18310.0,
-        "duration_ms": 300
+        "start_ms": 30370,
+        "duration_ms": 360
     },
     {
         "src": "B-bNigfnoTs",
         "word": "힘",
-        "start_ms": 22360.0,
-        "duration_ms": 260.0
+        "start_ms": 22400,
+        "duration_ms": 300
     }
 ]

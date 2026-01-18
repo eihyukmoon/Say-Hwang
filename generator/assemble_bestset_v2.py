@@ -133,6 +133,8 @@ class GoldenAssembler:
                 if start + dur > len(full_audio):
                     dur = len(full_audio) - start
                 
+                dur=min(dur,300)
+                
                 # 1. 오디오 자르기
                 clip = full_audio[start : start + dur]
                 
@@ -160,4 +162,4 @@ class GoldenAssembler:
 
 if __name__ == "__main__":
     assembler = GoldenAssembler(audio_folder="./youtube_audio", json_path="./single_best.json")
-    assembler.assemble("리그 오브 레전드")
+    assembler.assemble("두쫀쿠")

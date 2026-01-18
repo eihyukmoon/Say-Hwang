@@ -38,12 +38,22 @@ class GoldenRefiner:
         with open(self.json_path, 'w', encoding='utf-8') as f:
             json.dump(self.data, f, indent=4, ensure_ascii=False)
 
+    def match_target_amplitude(self, sound, target_dBFS=-20.0):
+        """
+        현재 사운드의 dBFS(Decibels relative to Full Scale)를 확인하고,
+        Target 볼륨과의 차이만큼 게인(Gain)을 조절하여 리턴합니다.
+        """
+        change_in_dBFS = target_dBFS - sound.dBFS
+        return sound.apply_gain(change_in_dBFS)
+
     def play_once(self, clip):
         """삐 소리를 붙여서 재생"""
         temp_file = "temp_refine.mp3"
         
         # [수정됨] 삐 + 침묵 + 실제오디오 합치기
-        final_sound = self.beep + self.silence + clip
+        final_sound = self.beep + clip
+        
+        final_sound = self.match_target_amplitude(final_sound, target_dBFS=-20.0)
         
         final_sound.export(temp_file, format="mp3")
         
