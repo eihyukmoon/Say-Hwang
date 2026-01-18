@@ -2,6 +2,7 @@ import json
 import os
 import numpy as np
 from pydub import AudioSegment
+from pydub.generators import Sine
 from jamo import h2j, j2hcj
 from g2pk import G2p
 
@@ -9,42 +10,20 @@ from g2pk import G2p
 AudioSegment.converter = r"C:\ffmpeg\bin\ffmpeg.exe"
 
 class KoreanPhoneticVectorizer:
+    # (기존과 동일하여 생략 가능하지만, 실행을 위해 포함)
     def __init__(self):
         self.CHO_GROUPS = [{'ㄱ', 'ㄲ', 'ㅋ'}, {'ㄷ', 'ㄸ', 'ㅌ'}, {'ㅂ', 'ㅃ', 'ㅍ'}, {'ㅈ', 'ㅉ', 'ㅊ'}, {'ㅅ', 'ㅆ'}, {'ㅇ', 'ㅎ'}, {'ㄴ', 'ㄹ', 'ㅁ'}]
         self.JUNG_GROUPS = [{'ㅏ', 'ㅑ'}, {'ㅓ', 'ㅕ'}, {'ㅗ', 'ㅛ'}, {'ㅜ', 'ㅠ'}, {'ㅡ', 'ㅣ'}, {'ㅐ', 'ㅔ', 'ㅒ', 'ㅖ'}, {'ㅘ', 'ㅚ', 'ㅙ', 'ㅞ'}, {'ㅝ', 'ㅟ', 'ㅢ'}]
-    
+
     def decompose(self, char):
         if '가' <= char <= '힣': return j2hcj(h2j(char))
         return None
-
-    def _is_same_group(self, c1, c2, groups):
-        for group in groups:
-            if c1 in group and c2 in group: return True
-        return False
-
-    def calculate_distance(self, target_char, db_char):
-        t_parts, d_parts = self.decompose(target_char), self.decompose(db_char)
-        if not t_parts or not d_parts: return 999
-        t_cho, t_jung, t_jong = (t_parts + '   ')[:3]
-        d_cho, d_jung, d_jong = (d_parts + '   ')[:3]
-
-        score = 0
-        if t_jung != d_jung: score += 10 if self._is_same_group(t_jung, d_jung, self.JUNG_GROUPS) else 50
-        if t_cho != d_cho: score += 5 if self._is_same_group(t_cho, d_cho, self.CHO_GROUPS) else 30
-        if t_jong != d_jong:
-            if (t_jong == ' ') != (d_jong == ' '): score += 15
-            elif self._is_same_group(t_jong, d_jong, self.CHO_GROUPS): score += 5
-            else: score += 10
-        return score
 
 class GoldenAssembler:
     def __init__(self, audio_folder, json_path="./single_best.json"):
         self.audio_folder = audio_folder
         self.json_path = json_path
-        self.golden_map = {}
         self.audio_cache = {}
-        self.g2p = G2p()
-        self.vectorizer = KoreanPhoneticVectorizer()
         self._initialize_database()
 
     def _initialize_database(self):
@@ -53,13 +32,12 @@ class GoldenAssembler:
             return
 
         with open(self.json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+            self.raw_data = json.load(f) # 전체 리스트 저장
         
-        print(f"📂 골든 셋 로딩 중... ({len(data)}개 데이터)")
+        print(f"📂 데이터베이스 로딩 중... ({len(self.raw_data)}개 데이터)")
         
         required_sources = set()
-        for entry in data:
-            self.golden_map[entry['word']] = entry
+        for entry in self.raw_data:
             required_sources.add(entry['src'])
             
         print(f"🎵 오디오 소스 {len(required_sources)}개 로드 시작...")
@@ -80,74 +58,62 @@ class GoldenAssembler:
                 print(f"   ⚠️ 오디오 파일 없음: {src}")
         print(f"✅ 초기화 완료")
 
-    def _find_best_substitute(self, target_char):
-        best_char, min_score = None, 999
-        for db_char in self.golden_map.keys():
-            score = self.vectorizer.calculate_distance(target_char, db_char)
-            if score < min_score:
-                min_score = score
-                best_char = db_char
-            if min_score == 0: return best_char
-        return best_char
-
     def match_target_amplitude(self, sound, target_dBFS=-20.0):
         change_in_dBFS = target_dBFS - sound.dBFS
         return sound.apply_gain(change_in_dBFS)
 
-    def assemble(self, text, output_path="final_output.mp3"):
-        pronunciation = self.g2p(text)
-        print(f"\n📢 합성 시작: '{text}' -> [{pronunciation}]")
+    def export_all_clips(self, output_path="all_clips_inventory.mp3"):
+        """
+        DB에 있는 모든 클립을 가나다순으로 정렬하여 비프음과 함께 출력합니다.
+        """
+        print(f"\n📢 모든 오디오 클립 추출 시작 (총 {len(self.raw_data)}개)")
+        
+        # 1. 가나다 순으로 정렬 (검수하기 편하게)
+        sorted_data = sorted(self.raw_data, key=lambda x: x['word'])
+        
+        # 2. 비프음 생성 (뚜- 소리, 100ms)
+        beep = Sine(1000).to_audio_segment(duration=100).apply_gain(-5)
         
         combined = AudioSegment.empty()
         
-        for char in pronunciation:
-            if char == " ":
-                combined += AudioSegment.silent(duration=200)
-                continue
-            
-            target = char
-            match_type = "정확"
-            
-            if char not in self.golden_map:
-                target = self._find_best_substitute(char)
-                match_type = "대체"
-                
-            if not target or target not in self.golden_map:
-                print(f"❌ 실패: '{char}' (대체 불가)")
-                continue
-
-            info = self.golden_map[target]
+        count = 0
+        for info in sorted_data:
+            word = info['word']
             src_id = info['src']
+            start = info['start_ms']
+            dur = info['duration_ms']
             
             if src_id in self.audio_cache:
                 full_audio = self.audio_cache[src_id]
-                start = info['start_ms']
-                dur = info['duration_ms']
                 
+                # 범위 체크
                 if start + dur > len(full_audio):
                     dur = len(full_audio) - start
                 
-                dur = min(dur, 300)
-                
+                # 오디오 자르기
                 clip = full_audio[start : start + dur]
+                
+                # 볼륨 평준화 (검수용이라도 귀 아프지 않게)
                 clip = self.match_target_amplitude(clip, target_dBFS=-20.0)
+                
+                # 페이드 살짝
                 clip = clip.fade_in(5).fade_out(5)
                 
-                log = f"[{char}]"
-                if match_type == "대체":
-                    log += f" -> 🔄대체: [{target}]"
-                print(f"{log} : {src_id} ({dur}ms) [Vol Normalized]")
+                # 합치기: [공백] + [단어] + [공백] + [비프음]
+                combined += clip + beep
                 
-                if len(combined) > 0:
-                    combined = combined.append(clip, crossfade=10)
-                else:
-                    combined = clip
+                count += 1
+                print(f"[{count}] '{word}' 완료 (src: {src_id}, {dur}ms)")
             else:
-                print(f"❌ 오디오 데이터 누락: {src_id}")
-
+                print(f"❌ '{word}' 스킵됨 (소스 오디오 없음: {src_id})")
+                
+        # 내보내기
         combined.export(output_path, format="mp3")
-        print(f"\n🎉 저장 완료: {output_path}")
+        print(f"\n🎉 전체 클립 저장 완료: {output_path}")
+        print("💡 팁: 이 파일을 들으면서 이상한 발음이 나오면 해당 단어를 JSON에서 찾아 수정하거나 삭제하세요.")
 
 if __name__ == "__main__": 
     assembler = GoldenAssembler(audio_folder="./youtube_audio", json_path="./single_best.json")
-    assembler.assemble("잘 부탁드립니다")
+    
+    # 이 함수를 호출하면 됩니다.
+    assembler.export_all_clips("all_clips_inventory.mp3")
