@@ -48,7 +48,7 @@ class KoreanPhoneticVectorizer:
             else: score += 10
         return score
 
-    def calculate_string_distance(self, target_str, db_str,cut):
+    def calculate_string_distance(self, target_str, db_str,cut=9999):
         if len(target_str) != len(db_str): return 9999
         total_score = 0
         for t, d in zip(target_str, db_str):
@@ -179,7 +179,7 @@ class GoldenAssembler:
         
         candidates = db[length]
         best_chunk = None
-        max_cut = 40
+        max_cut = 20
         min_score=max_cut
 
         for chunk in candidates:
@@ -379,7 +379,7 @@ class GoldenAssembler:
                     prefix_chunk = chunk_match
                     prefix_len = length
                     src= prefix_chunk["src"]
-                    print(f"  👉 Prefix 발견: '{target_sub} -> '{chunk_match['text']}' : {src}'")
+                    print(f"  👉 Prefix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
                     break
             
             
@@ -395,7 +395,7 @@ class GoldenAssembler:
                     suffix_chunk = chunk_match
                     suffix_len = length
                     src=suffix_chunk["src"]
-                    print(f"  👈 Suffix 발견: '{target_sub}'  -> '{chunk_match['text']}' : {src}")
+                    print(f"  👈 Suffix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
                     break
 
             if prefix_chunk:
@@ -426,7 +426,7 @@ class GoldenAssembler:
                 clip = self._apply_smart_speed(clip, 200*self._get_char_weight(target_char,islast))
                 
                 src=info["src"]
-                log = f"    🧩 Middle: '{char}' : {src}"
+                log = f"    🧩 Middle: '{char}' : {src} {self.vectorizer.calculate_distance(target_char,char)}"
                 if is_substitute: log += f" (->{target_char})"
                 print(log)
                 
@@ -449,5 +449,4 @@ class GoldenAssembler:
 
 if __name__ == "__main__":
     assembler = GoldenAssembler(audio_folder="./youtube_audio")
-    # 예: "반갑습니다" -> "반갑"(Prefix) + "습니다"(Suffix) 이런 식으로 검색됨
-    assembler.assemble("발표 시작하겠습니다")
+    assembler.assemble("누구세요? 뚱인데요 할렐루야")
