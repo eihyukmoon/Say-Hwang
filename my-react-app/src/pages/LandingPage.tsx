@@ -1,4 +1,3 @@
-import React from "react";
 
 type LandingPageProps = {
     onStart: () => void;
@@ -8,9 +7,10 @@ export default function LandingPage({ onStart }: LandingPageProps) {
     return (
         <div className="min-h-screen w-full flex items-center justify-center bg-zinc-950 text-zinc-100 p-4 relative overflow-hidden">
             {/* Background gradients */}
+            {/* Background Spline Viewer */}
             <div className="fixed inset-0 pointer-events-none">
-                <div className="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-purple-500/10 rounded-full blur-[120px]" />
-                <div className="absolute bottom-[-20%] right-[-10%] w-[70%] h-[70%] bg-blue-500/10 rounded-full blur-[120px]" />
+                {/* @ts-ignore */}
+                <spline-viewer url="https://prod.spline.design/CaN6fPDeBgb6ufke/scene.splinecode"></spline-viewer>
             </div>
 
             <div className="relative z-10 flex flex-col items-center text-center space-y-8 animate-fade-in-up">
