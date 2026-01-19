@@ -67,6 +67,26 @@ export default function MyPage({ onBack }: MyPageProps) {
                         </div>
                     </div>
                 </div>
+
+                {/* History Section */}
+                <div className="p-8 rounded-3xl bg-white/5 border border-white/10 space-y-6">
+                    <h3 className="text-lg font-bold text-white">내가 말했던 문장들</h3>
+                    <div className="space-y-4">
+                        {/* Placeholder data - later connect to real DB/Storage */}
+                        <div className="p-4 rounded-2xl bg-black/20 border border-white/5">
+                            <p className="text-zinc-300">"오늘 날씨가 정말 좋네요."</p>
+                            <span className="text-xs text-zinc-500 mt-2 block">2026. 01. 19.</span>
+                        </div>
+                        <div className="p-4 rounded-2xl bg-black/20 border border-white/5">
+                            <p className="text-zinc-300">"새로운 프로젝트를 시작하고 싶어요."</p>
+                            <span className="text-xs text-zinc-500 mt-2 block">2026. 01. 18.</span>
+                        </div>
+                        <div className="p-4 rounded-2xl bg-black/20 border border-white/5">
+                            <p className="text-zinc-300">"리액트로 웹사이트를 만드는 건 재미있어요."</p>
+                            <span className="text-xs text-zinc-500 mt-2 block">2026. 01. 15.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

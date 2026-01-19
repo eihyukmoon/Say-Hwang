@@ -8,9 +8,9 @@ export default function LandingPage({ onStart }: LandingPageProps) {
         <div className="min-h-screen w-full flex items-center justify-center bg-zinc-950 text-zinc-100 p-4 relative overflow-hidden">
             {/* Background gradients */}
             {/* Background Spline Viewer */}
-            <div className="fixed inset-0 pointer-events-none">
+            <div className="fixed inset-0">
                 {/* @ts-ignore */}
-                <spline-viewer url="https://prod.spline.design/CaN6fPDeBgb6ufke/scene.splinecode"></spline-viewer>
+                <spline-viewer url="https://prod.spline.design/7RzisIUMo9vQux6i/scene.splinecode"></spline-viewer>
             </div>
 
             <div className="relative z-10 flex flex-col items-center text-center space-y-8 animate-fade-in-up">
@@ -19,8 +19,7 @@ export default function LandingPage({ onStart }: LandingPageProps) {
                         Say Hwang
                     </h1>
                     <p className="text-lg md:text-xl text-zinc-400 max-w-lg mx-auto leading-relaxed">
-                        더 나은 경험을 시작해보세요. <br />
-                        당신의 이야기를 들려주세요.
+
                     </p>
                 </div>
 
