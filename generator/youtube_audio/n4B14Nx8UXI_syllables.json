@@ -893,7 +893,7 @@
         ]
     },
     {
-        "word": "브라드",
+        "word": "브라더",
         "start_ms": 32660.0,
         "syllables": [
             {
@@ -907,7 +907,7 @@
                 "duration_ms": 100.0
             },
             {
-                "text": "드",
+                "text": "더",
                 "start_ms": 32920.0,
                 "duration_ms": 100.0
             }

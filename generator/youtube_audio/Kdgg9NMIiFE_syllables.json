@@ -397,20 +397,14 @@
         ]
     },
     {
-        "word": "안",
+        "word": "반역",
         "start_ms": 25130.0,
         "syllables": [
             {
-                "text": "안",
+                "text": "반",
                 "start_ms": 25130.0,
                 "duration_ms": 260.0
-            }
-        ]
-    },
-    {
-        "word": "역",
-        "start_ms": 25410.0,
-        "syllables": [
+            },
             {
                 "text": "역",
                 "start_ms": 25410.0,
@@ -451,12 +445,12 @@
             {
                 "text": "혁",
                 "start_ms": 26320.0,
-                "duration_ms": 320.0
+                "duration_ms": 300.0
             },
             {
                 "text": "명",
-                "start_ms": 26670.0,
-                "duration_ms": 230.0
+                "start_ms": 26620.0,
+                "duration_ms": 200.0
             }
         ]
     },

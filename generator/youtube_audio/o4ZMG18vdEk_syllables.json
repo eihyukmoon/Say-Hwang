@@ -401,16 +401,16 @@
         ]
     },
     {
-        "word": "싶어",
+        "word": "씨팔",
         "start_ms": 27480.0,
         "syllables": [
             {
-                "text": "싶",
+                "text": "씨",
                 "start_ms": 27480.0,
                 "duration_ms": 300.0
             },
             {
-                "text": "어",
+                "text": "팔",
                 "start_ms": 27800.0,
                 "duration_ms": 300.0
             }

@@ -23,12 +23,17 @@
     },
     {
         "word": "에이",
-        "start_ms": 19010.0,
+        "start_ms": 18960.0,
         "syllables": [
             {
                 "text": "에",
-                "start_ms": 19010.0,
-                "duration_ms": 220.0
+                "start_ms": 18960.0,
+                "duration_ms": 170.0
+            },
+            {
+                "text": "이",
+                "start_ms": 19150.0,
+                "duration_ms": 150.0
             }
         ]
     },
@@ -233,12 +238,17 @@
     },
     {
         "word": "빨리",
-        "start_ms": 38820.0,
+        "start_ms": 38865.0,
         "syllables": [
             {
                 "text": "빨",
-                "start_ms": 38820.0,
-                "duration_ms": 290.0
+                "start_ms": 38865.0,
+                "duration_ms": 170.0
+            },
+            {
+                "text": "리",
+                "start_ms": 39026.0,
+                "duration_ms": 250.0
             }
         ]
     },

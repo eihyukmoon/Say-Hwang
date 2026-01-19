@@ -160,7 +160,7 @@ class GoldenAssembler:
         jamo = j2hcj(h2j(char))
         weight = 1.0
         if len(jamo) == 3: weight += 0.4  # 받침 있음
-        if is_last_char: weight += 0.9    # 어절 끝
+        if is_last_char: weight += 0.6    # 어절 끝
         return weight
 
     def assemble(self, text, output_path="final_output.mp3"):
@@ -227,4 +227,4 @@ class GoldenAssembler:
 
 if __name__ == "__main__":
     assembler = GoldenAssembler(audio_folder="./youtube_audio")
-    assembler.assemble("고생하셨습니다")
+    assembler.assemble("리그 오브 레전드")
