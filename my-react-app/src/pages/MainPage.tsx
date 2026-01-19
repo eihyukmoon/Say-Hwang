@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { supabase } from "../lib/supabaseClient";
 
 type MainPageProps = {
@@ -8,15 +8,48 @@ type MainPageProps = {
 
 export default function MainPage({ onLogout, onMyPage }: MainPageProps) {
     const nextSectionRef = useRef<HTMLDivElement>(null);
+    const textareaRef = useRef<HTMLTextAreaElement>(null);
+    const [loading, setLoading] = useState(false);
+    const [audioSrc, setAudioSrc] = useState<string | null>(null);
 
     const handleLogout = async () => {
         await supabase.auth.signOut();
         onLogout();
     };
 
-    const handleSave = () => {
-        // Scroll to the next section
-        nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    const handleSave = async () => {
+        const text = textareaRef.current?.value;
+        if (!text || text.trim().length === 0) {
+            alert('이야기를 입력해주세요');
+            return;
+        }
+
+        try {
+            setLoading(true);
+            const response = await fetch('http://localhost:4000/api/save-story', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ story: text }),
+            });
+            
+            if (!response.ok) {
+                const errData = await response.json();
+                throw new Error(errData.error || '저장 실패');
+            }
+
+            const blob = await response.blob();
+            const url = URL.createObjectURL(blob);
+            setAudioSrc(url);
+
+            // Scroll to the next section
+            nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+            setLoading(false);
+        } catch (err) {
+            alert('오류가 발생했습니다: ' + (err instanceof Error ? err.message : '알 수 없는 오류'));
+            setLoading(false);
+        }
     };
 
     return (
@@ -52,6 +85,7 @@ export default function MainPage({ onLogout, onMyPage }: MainPageProps) {
                         </h2>
                         <div className="relative group">
                             <textarea
+                                ref={textareaRef}
                                 className="w-full h-48 bg-white/5 border border-white/10 rounded-3xl p-6 text-lg text-white placeholder:text-zinc-600 focus:outline-none focus:bg-white/10 focus:border-white/20 transition-all duration-300 resize-none"
                                 placeholder="이곳에 당신의 이야기를 적어주세요..."
                             />
@@ -71,26 +105,32 @@ export default function MainPage({ onLogout, onMyPage }: MainPageProps) {
             {/* Second Screen: Content (Initially hidden via scroll) */}
             <div
                 ref={nextSectionRef}
-                className="min-h-screen w-full bg-zinc-900 p-8 flex items-center justify-center"
+                className="min-h-screen w-full bg-zinc-900 p-8 flex flex-col items-center justify-center"
             >
-                <div className="max-w-3xl w-full text-center space-y-8">
-                    <h2 className="text-3xl font-bold">저장된 이야기</h2>
-                    <p className="text-zinc-400">
-                        여기에 저장된 내용이 표시되거나, 새로운 단계가 진행될 예정입니다.
-                    </p>
-                    {/* Placeholder content */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                        <div className="p-6 rounded-3xl bg-black/20 border border-white/5">
-                            <div className="w-10 h-10 rounded-full bg-indigo-500/20 mb-4" />
-                            <h3 className="text-lg font-medium mb-2">분석 중...</h3>
-                            <p className="text-sm text-zinc-500">당신의 이야기를 분석하고 있습니다.</p>
-                        </div>
-                        <div className="p-6 rounded-3xl bg-black/20 border border-white/5">
-                            <div className="w-10 h-10 rounded-full bg-rose-500/20 mb-4" />
-                            <h3 className="text-lg font-medium mb-2">인사이트</h3>
-                            <p className="text-sm text-zinc-500">곧 새로운 통찰을 제공해 드릴게요.</p>
-                        </div>
+                <div className="max-w-3xl w-full space-y-8 text-center">
+                    <div className="space-y-2">
+                        <h2 className="text-3xl font-bold">저장된 이야기</h2>
+                        <p className="text-zinc-400 text-sm">생성된 오디오를 들어보세요</p>
                     </div>
+
+                    {loading ? (
+                         <div className="text-center text-zinc-400">오디오 생성 중...</div>
+                    ) : audioSrc ? (
+                        <div className="flex flex-col items-center justify-center gap-4 p-8 bg-white/5 rounded-2xl border border-white/10">
+                            <audio controls autoPlay src={audioSrc} className="w-full max-w-lg" />
+                            <a 
+                                href={audioSrc} 
+                                download="story.mp3"
+                                className="text-sm text-zinc-500 hover:text-white transition-colors"
+                            >
+                                다운로드
+                            </a>
+                        </div>
+                    ) : (
+                        <div className="text-zinc-500">
+                             저장 버튼을 눌러 이야기를 생성해보세요.
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

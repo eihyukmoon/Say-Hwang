@@ -1,0 +1,84 @@
+[
+    {
+        "text": "누",
+        "substitute_text": "루",
+        "file_name": "-d-P7D0jPAc",
+        "start_ms": 55250,
+        "duration_ms": 180,
+        "speed": 0.5,
+        "volume_gain_db": -1.81
+    },
+    {
+        "text": "구",
+        "substitute_text": "쿠",
+        "file_name": "o4ZMG18vdEk",
+        "start_ms": 21450,
+        "duration_ms": 340,
+        "speed": 1.7,
+        "volume_gain_db": 15.81
+    },
+    {
+        "text": "세",
+        "substitute_text": null,
+        "file_name": "BSZHxXzF9wU",
+        "start_ms": 2050,
+        "duration_ms": 200,
+        "speed": 1.0,
+        "volume_gain_db": -7.2
+    },
+    {
+        "text": "요",
+        "substitute_text": null,
+        "file_name": "n4B14Nx8UXI",
+        "start_ms": 16850,
+        "duration_ms": 370,
+        "speed": 1.0,
+        "volume_gain_db": 7.46
+    },
+    {
+        "type": "silence",
+        "duration_ms": 200
+    },
+    {
+        "text": "뚱",
+        "substitute_text": "퉁",
+        "file_name": "m4qCZ6jAfaw",
+        "start_ms": 20880,
+        "duration_ms": 330,
+        "speed": 0.75,
+        "volume_gain_db": 9.56
+    },
+    {
+        "text": "인",
+        "substitute_text": null,
+        "file_name": "lE5ZcbgCxuQ",
+        "start_ms": 19490,
+        "duration_ms": 190,
+        "speed": 0.731,
+        "volume_gain_db": -4.93
+    },
+    {
+        "text": "데요",
+        "file_name": "-d-P7D0jPAc",
+        "start_ms": 30380.0,
+        "duration_ms": 490.0,
+        "speed": 1.0,
+        "volume_gain_db": -2.48
+    },
+    {
+        "type": "silence",
+        "duration_ms": 200
+    },
+    {
+        "text": "할렐루야",
+        "file_name": "-d-P7D0jPAc",
+        "start_ms": 55100.0,
+        "duration_ms": 660.0,
+        "speed": 1.0,
+        "volume_gain_db": -2.96
+    },
+    {
+        "type": "silence",
+        "duration_ms": 200
+    }
+]

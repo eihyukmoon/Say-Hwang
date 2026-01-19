@@ -515,13 +515,13 @@
             },
             {
                 "text": "데",
-                "start_ms": 30400.0,
+                "start_ms": 30380.0,
                 "duration_ms": 80.0
             },
             {
                 "text": "요",
                 "start_ms": 30500.0,
-                "duration_ms": 390.0
+                "duration_ms": 370.0
             }
         ]
     },
