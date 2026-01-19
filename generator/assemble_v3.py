@@ -84,11 +84,11 @@ class GoldenAssembler:
             required = {d['src'] for d in data}
             self._cache_audio_files(required)
             
-        print(f"✅ 싱글 DB 로드 완료: {len(self.golden_map)}개")
+        print(f"[INFO] 싱글 DB 로드 완료: {len(self.golden_map)}개")
 
     def _load_chunk_db(self):
         json_files = glob.glob(os.path.join(self.audio_folder, "*_syllables.json"))
-        print(f"📂 덩어리(Chunk) 데이터 분석 중... ({len(json_files)}개 파일)")
+        print(f"[INFO] 덩어리(Chunk) 데이터 분석 중... ({len(json_files)}개 파일)")
         
         chunk_count = 0
         required_srcs = set()
@@ -157,7 +157,7 @@ class GoldenAssembler:
                     chunk_count += 1
 
         self._cache_audio_files(required_srcs)
-        print(f"✅ 덩어리 DB 구축 완료 (Prefix/Suffix Only): {chunk_count}개 패턴 확보")
+        print(f" 덩어리 DB 구축 완료 (Prefix/Suffix Only): {chunk_count}개 패턴 확보")
 
     def _cache_audio_files(self, src_ids):
         for src in src_ids:
@@ -280,7 +280,7 @@ class GoldenAssembler:
                 return sound[:target_ms]
 
         except Exception as e:
-            print(f"⚠️ FFmpeg 처리 중 오류: {e}")
+            print(f"[ERROR] FFmpeg 처리 중 오류: {e}")
             return sound[:target_ms]
             
         finally:
@@ -349,7 +349,7 @@ class GoldenAssembler:
     def assemble(self, text, output_path="final_output_hybrid.mp3"):
         # 1. 텍스트 정리
         clean_text_input = re.sub(r'[^\w\s]', '', text)
-        print(f"\n📢 입력: '{clean_text_input}'")
+        print(f"\n 입력: '{clean_text_input}'")
 
         combined = AudioSegment.empty()
 
@@ -360,7 +360,7 @@ class GoldenAssembler:
             pronunciation = self.g2p(word)
             total_len = len(pronunciation)
             
-            print(f"\n🔹 단어 처리: '{word}' -> [{pronunciation}]")
+            print(f"\n 단어 처리: '{word}' -> [{pronunciation}]")
 
             prefix_chunk = None
             suffix_chunk = None
@@ -379,7 +379,7 @@ class GoldenAssembler:
                     prefix_chunk = chunk_match
                     prefix_len = length
                     src= prefix_chunk["src"]
-                    print(f"  👉 Prefix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
+                    print(f"  Prefix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
                     break
             
             
@@ -395,7 +395,7 @@ class GoldenAssembler:
                     suffix_chunk = chunk_match
                     suffix_len = length
                     src=suffix_chunk["src"]
-                    print(f"  👈 Suffix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
+                    print(f"  Suffix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
                     break
 
             if prefix_chunk:
@@ -426,7 +426,7 @@ class GoldenAssembler:
                 clip = self._apply_smart_speed(clip, 200*self._get_char_weight(target_char,islast))
                 
                 src=info["src"]
-                log = f"    🧩 Middle: '{char}' : {src} {self.vectorizer.calculate_distance(target_char,char)}"
+                log = f"    Middle: '{char}' : {src} {self.vectorizer.calculate_distance(target_char,char)}"
                 if is_substitute: log += f" (->{target_char})"
                 print(log)
                 
@@ -445,7 +445,7 @@ class GoldenAssembler:
             combined += AudioSegment.silent(duration=200)
 
         combined.export(output_path, format="mp3")
-        print(f"\n🎉 저장 완료: {output_path}")
+        print(f"\n 저장 완료: {output_path}")
 
 if __name__ == "__main__":
     import sys
