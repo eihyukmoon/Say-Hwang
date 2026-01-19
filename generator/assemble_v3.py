@@ -448,5 +448,10 @@ class GoldenAssembler:
         print(f"\n🎉 저장 완료: {output_path}")
 
 if __name__ == "__main__":
+    import sys
+    text_to_speak = "감사합니다"
+    if len(sys.argv) > 1:
+        text_to_speak = sys.argv[1]
+    
     assembler = GoldenAssembler(audio_folder="./youtube_audio")
-    assembler.assemble("누구세요? 뚱인데요 할렐루야")
+    assembler.assemble(text_to_speak)
