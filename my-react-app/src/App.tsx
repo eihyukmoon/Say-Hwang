@@ -3,9 +3,10 @@ import LoginPage from "./pages/LoginPage";
 import LandingPage from "./pages/LandingPage";
 import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
+import VideoPlayerPage from "./pages/VideoPlayerPage";
 import { supabase } from "./lib/supabaseClient";
 
-type ViewState = "landing" | "login" | "register" | "main";
+type ViewState = "landing" | "login" | "register" | "main" | "video-player";
 
 export default function App() {
   const [view, setView] = useState<ViewState>("landing");
@@ -55,6 +56,9 @@ export default function App() {
       )}
       {view === "main" && (
         <MainPage onLogout={() => setView("landing")} />
+      )}
+      {view === "video-player" && (
+        <VideoPlayerPage />
       )}
     </>
   );
