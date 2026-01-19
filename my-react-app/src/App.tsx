@@ -3,9 +3,10 @@ import LoginPage from "./pages/LoginPage";
 import LandingPage from "./pages/LandingPage";
 import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
+import MyPage from "./pages/MyPage";
 import { supabase } from "./lib/supabaseClient";
 
-type ViewState = "landing" | "login" | "register" | "main";
+type ViewState = "landing" | "login" | "register" | "main" | "mypage";
 
 export default function App() {
   const [view, setView] = useState<ViewState>("landing");
@@ -54,7 +55,13 @@ export default function App() {
         <RegisterPage onLoginClick={() => setView("login")} />
       )}
       {view === "main" && (
-        <MainPage onLogout={() => setView("landing")} />
+        <MainPage
+          onLogout={() => setView("landing")}
+          onMyPage={() => setView("mypage")}
+        />
+      )}
+      {view === "mypage" && (
+        <MyPage onBack={() => setView("main")} />
       )}
     </>
   );
