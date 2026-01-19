@@ -16,7 +16,7 @@ export default function LandingPage({ onStart }: LandingPageProps) {
             <div className="relative z-10 flex flex-col items-center text-center space-y-8 animate-fade-in-up">
                 <div className="space-y-4">
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-white to-zinc-500">
-                        Say Hwang
+
                     </h1>
                     <p className="text-lg md:text-xl text-zinc-400 max-w-lg mx-auto leading-relaxed">
 
