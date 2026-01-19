@@ -173,7 +173,7 @@ class GoldenAssemblerJSON:
         
         for chunk in candidates:
             if chunk['text'] == target_text: return chunk
-            score = self.vectorizer.calculate_string_distance(target_text, chunk['text'], 9999)
+            score = self.vectorizer.calculate_string_distance(target_text, chunk['text'], 20)
             if score <= 20 and score < min_score:
                 min_score = score
                 best_chunk = chunk
