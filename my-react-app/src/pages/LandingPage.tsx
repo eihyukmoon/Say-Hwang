@@ -10,7 +10,7 @@ export default function LandingPage({ onStart }: LandingPageProps) {
             {/* Background Spline Viewer */}
             <div className="fixed inset-0">
                 {/* @ts-ignore */}
-                <spline-viewer url="https://prod.spline.design/7RzisIUMo9vQux6i/scene.splinecode"></spline-viewer>
+                <spline-viewer url="https://prod.spline.design/5xsYQk4pcCREoNoe/scene.splinecode"></spline-viewer>
             </div>
 
             <div className="relative z-10 flex flex-col items-center text-center space-y-8 animate-fade-in-up">
@@ -25,9 +25,9 @@ export default function LandingPage({ onStart }: LandingPageProps) {
 
                 <button
                     onClick={onStart}
-                    className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)]"
+                    className="group absolute bottom-10 left-1/2 -translate-x-1/2 px-8 py-4 bg-white text-black font-semibold rounded-full text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)]"
                 >
-                    <span className="relative z-10">시작하기</span>
+                    <span className="relative z-10">고</span>
                     <div className="absolute inset-0 rounded-full bg-white blur opacity-0 group-hover:opacity-40 transition-opacity duration-300" />
                 </button>
             </div>

@@ -11,7 +11,9 @@ import subprocess
 import tempfile
 
 # ffmpeg 경로 설정
-AudioSegment.converter = r"C:\ffmpeg\bin\ffmpeg.exe"
+# ffmpeg 경로 설정
+# AudioSegment.converter = "ffmpeg" # 기본적으로 PATH에 있으면 주석 처리해도 됨
+
 
 # ---------------------------------------------------------
 # 1. 유사 발음 찾기 엔진
