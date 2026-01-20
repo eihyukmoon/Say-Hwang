@@ -311,12 +311,12 @@
     },
     {
         "word": "가능합니까",
-        "start_ms": 8980.0,
+        "start_ms": 8940.0,
         "syllables": [
             {
                 "text": "가",
-                "start_ms": 8980.0,
-                "duration_ms": 120.0
+                "start_ms": 8940.0,
+                "duration_ms": 110.0
             },
             {
                 "text": "능",

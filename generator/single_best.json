@@ -66,10 +66,10 @@
         "duration_ms": 350
     },
     {
-        "src": "-d-P7D0jPAc",
+        "src": "lE5ZcbgCxuQ",
         "word": "게",
-        "start_ms": 8750,
-        "duration_ms": 180
+        "start_ms": 51800,
+        "duration_ms": 170
     },
     {
         "src": "lE5ZcbgCxuQ",
@@ -128,8 +128,20 @@
     {
         "src": "-d-P7D0jPAc",
         "word": "어",
-        "start_ms": 8420.0,
-        "duration_ms": 130
+        "start_ms": 28290,
+        "duration_ms": 220
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "가",
+        "start_ms": 8940,
+        "duration_ms": 110
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "케",
+        "start_ms": 8750,
+        "duration_ms": 180
     },
     {
         "src": "lE5ZcbgCxuQ",
