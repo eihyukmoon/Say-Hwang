@@ -386,7 +386,7 @@ class GoldenAssembler:
                     prefix_chunk = chunk_match
                     prefix_len = length
                     src= prefix_chunk["src"]
-                    print(f"  Prefix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
+                    print(f"  Prefix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} : {chunk_match['start_ms']}~{chunk_match['start_ms']+chunk_match['duration_ms']} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
                     break
             
             
