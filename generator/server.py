@@ -42,5 +42,5 @@ def health_check():
     return jsonify({'status': 'ok', 'message': 'Python 서버 정상 작동 중'})
 
 if __name__ == '__main__':
-    # 5000번 포트 충돌 방지를 위해 5050으로 변경
+    # 5000번 포트 충돌 방지 및 사용자 요청으로 4000으로 변경
     app.run(host='0.0.0.0', port=4000, debug=False)
