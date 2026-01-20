@@ -42,6 +42,12 @@
         "duration_ms": 320
     },
     {
+        "src": "-d-P7D0jPAc",
+        "word": "척",
+        "start_ms": 1025.0,
+        "duration_ms": 120.0
+    },
+    {
         "src": "5ZqHdPgFZFg",
         "word": "걱",
         "start_ms": 7370,
@@ -60,10 +66,10 @@
         "duration_ms": 350
     },
     {
-        "src": "lE5ZcbgCxuQ",
+        "src": "-d-P7D0jPAc",
         "word": "게",
-        "start_ms": 51800,
-        "duration_ms": 170
+        "start_ms": 8750,
+        "duration_ms": 180
     },
     {
         "src": "lE5ZcbgCxuQ",
@@ -118,6 +124,12 @@
         "word": "굴",
         "start_ms": 28290,
         "duration_ms": 220
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "어",
+        "start_ms": 8420.0,
+        "duration_ms": 130
     },
     {
         "src": "lE5ZcbgCxuQ",
@@ -274,6 +286,12 @@
         "word": "단",
         "start_ms": 46618,
         "duration_ms": 370
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "달",
+        "start_ms": 6830,
+        "duration_ms": 130
     },
     {
         "src": "n4B14Nx8UXI",
@@ -1084,6 +1102,12 @@
         "word": "저",
         "start_ms": 10610,
         "duration_ms": 170
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "전",
+        "start_ms": 1650.0,
+        "duration_ms": 190.0
     },
     {
         "src": "lE5ZcbgCxuQ",
