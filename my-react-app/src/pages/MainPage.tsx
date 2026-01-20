@@ -26,13 +26,13 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
         try {
             setLoading(true);
 
-            // 1. Python 서버로 오디오 생성 요청 (Port 4000)
-            const response = await fetch('http://localhost:4000/api/generate', {
+            // 1. Python 서버로 오디오 생성 요청 (via Node Proxy)
+            const response = await fetch('/api/save-story', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ text: text }),
+                body: JSON.stringify({ story: text }),
             });
 
             if (!response.ok) {
@@ -40,16 +40,7 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
                 throw new Error(errData.error || '저장 실패');
             }
 
-            const data = await response.json();
-
-            // Base64 -> Blob 변환
-            const binaryString = window.atob(data.audio_base64);
-            const bytes = new Uint8Array(binaryString.length);
-            for (let i = 0; i < binaryString.length; i++) {
-                bytes[i] = binaryString.charCodeAt(i);
-            }
-            const blob = new Blob([bytes], { type: 'audio/mpeg' });
-
+            const blob = await response.blob();
             const url = URL.createObjectURL(blob);
 
             // 2. Supabase 저장 (비동기 처리)
@@ -117,13 +108,13 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
                     <div className="flex items-center gap-4">
                         <button
                             onClick={onMyPage}
-                            className="px-4 py-2 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-full transition-colors"
+                            className="px-3 py-1.5 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-full transition-colors"
                         >
                             마이페이지
                         </button>
                         <button
                             onClick={handleLogout}
-                            className="px-4 py-2 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-full transition-colors"
+                            className="px-3 py-1.5 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-full transition-colors"
                         >
                             로그아웃
                         </button>
@@ -145,7 +136,7 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
                             <div className="absolute bottom-4 right-4">
                                 <button
                                     onClick={handleSave}
-                                    className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-zinc-200 transition-colors"
+                                    className="bg-white text-black px-5 py-2 rounded-full font-medium hover:bg-zinc-200 transition-colors"
                                 >
                                     {loading ? "생성 중..." : "고"}
                                 </button>

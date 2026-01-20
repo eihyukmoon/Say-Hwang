@@ -28,7 +28,7 @@ export default function LandingPage({ onStart }: LandingPageProps) {
 
                 <button
                     onClick={onStart}
-                    className="group absolute bottom-10 left-1/2 -translate-x-1/2 px-8 py-4 bg-white text-black font-semibold rounded-full text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)]"
+                    className="group absolute bottom-10 left-1/2 -translate-x-1/2 px-6 py-3 bg-white text-black font-semibold rounded-full text-lg hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)]"
                 >
                     <span className="relative z-10">고</span>
                     <div className="absolute inset-0 rounded-full bg-white blur opacity-0 group-hover:opacity-40 transition-opacity duration-300" />

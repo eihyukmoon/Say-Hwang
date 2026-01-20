@@ -3,14 +3,16 @@ import LoginPage from "./pages/LoginPage";
 import LandingPage from "./pages/LandingPage";
 import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
+import MainPage2 from "./pages/MainPage2";
 import MyPage from "./pages/MyPage";
 import { supabase } from "./lib/supabaseClient";
 
-type ViewState = "landing" | "login" | "register" | "main" | "mypage";
+type ViewState = "landing" | "login" | "register" | "main" | "main2" | "mypage";
 
 export default function App() {
   const [view, setView] = useState<ViewState>("landing");
   const [loading, setLoading] = useState(true);
+  const [audioSrc, setAudioSrc] = useState<string | null>(null);
 
   useEffect(() => {
     // Check active session
@@ -58,6 +60,16 @@ export default function App() {
         <MainPage
           onLogout={() => setView("landing")}
           onMyPage={() => setView("mypage")}
+          onGenerateSuccess={(url) => {
+            setAudioSrc(url);
+            setView("main2");
+          }}
+        />
+      )}
+      {view === "main2" && (
+        <MainPage2
+          audioSrc={audioSrc}
+          onBack={() => setView("main")}
         />
       )}
       {view === "mypage" && (

@@ -163,7 +163,7 @@ export default function LoginPage({ onSignUpClick, onLoginSuccess }: LoginPagePr
             <button
               type="submit"
               disabled={!canSubmit || loading}
-              className="w-full bg-white text-black font-semibold rounded-2xl py-3.5 text-sm hover:bg-zinc-200 active:scale-[0.98] disabled:opacity-50 disabled:active:scale-100 transition-all duration-200"
+              className="w-full bg-white text-black font-semibold rounded-2xl py-3 text-sm hover:bg-zinc-200 active:scale-[0.98] disabled:opacity-50 disabled:active:scale-100 transition-all duration-200"
             >
               {loading ? "로그인 중..." : "로그인"}
             </button>
@@ -180,7 +180,7 @@ export default function LoginPage({ onSignUpClick, onLoginSuccess }: LoginPagePr
             <button
               type="button"
               onClick={handleGoogleLogin}
-              className="w-full bg-white/10 text-white font-medium rounded-2xl py-3.5 text-sm hover:bg-white/20 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2"
+              className="w-full bg-white/10 text-white font-medium rounded-2xl py-3 text-sm hover:bg-white/20 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path

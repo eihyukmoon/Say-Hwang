@@ -444,6 +444,10 @@ class GoldenAssembler:
                     target_char = self._find_best_substitute(char)
                     is_substitute = True
 
+                if target_char is None:
+                    print(f"Warning: Cannot find sound for '{char}', skipping.")
+                    continue
+
                 info = self.golden_map[target_char]
                 clip = self._get_clip_from_info(info) 
                 clip = self._apply_smart_speed(clip, 200*self._get_char_weight(target_char,islast))
