@@ -26,12 +26,13 @@ export default function MainPage({ onLogout, onMyPage }: MainPageProps) {
 
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:4000/api/save-story', {
+            // Python Flask Server (Direct) - Port 4000
+            const response = await fetch('http://localhost:4000/api/generate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ story: text }),
+                body: JSON.stringify({ text: text }),
             });
             
             if (!response.ok) {
