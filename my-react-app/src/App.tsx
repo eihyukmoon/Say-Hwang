@@ -13,6 +13,7 @@ export default function App() {
   const [view, setView] = useState<ViewState>("landing");
   const [loading, setLoading] = useState(true);
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  const [generatedText, setGeneratedText] = useState<string | null>(null);
 
   useEffect(() => {
     // Check active session
@@ -60,8 +61,9 @@ export default function App() {
         <MainPage
           onLogout={() => setView("landing")}
           onMyPage={() => setView("mypage")}
-          onGenerateSuccess={(url) => {
+          onGenerateSuccess={(url, text) => {
             setAudioSrc(url);
+            setGeneratedText(text);
             setView("main2");
           }}
         />
@@ -69,6 +71,7 @@ export default function App() {
       {view === "main2" && (
         <MainPage2
           audioSrc={audioSrc}
+          text={generatedText}
           onBack={() => setView("main")}
         />
       )}

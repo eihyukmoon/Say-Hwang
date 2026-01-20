@@ -4,7 +4,7 @@ import { supabase } from "../lib/supabaseClient";
 type MainPageProps = {
     onLogout: () => void;
     onMyPage: () => void;
-    onGenerateSuccess: (audioUrl: string) => void;
+    onGenerateSuccess: (audioUrl: string, text: string) => void;
 };
 
 export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: MainPageProps) {
@@ -82,7 +82,7 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
 
             setLoading(false);
             // 페이지 전환
-            onGenerateSuccess(url);
+            onGenerateSuccess(url, text);
 
         } catch (err) {
             alert('오류가 발생했습니다: ' + (err instanceof Error ? err.message : '알 수 없는 오류'));
