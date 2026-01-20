@@ -83,8 +83,8 @@ export default function LoginPage({ onSignUpClick, onLoginSuccess }: LoginPagePr
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 min-h-screen w-full flex items-center justify-center text-zinc-100 p-4">
-        <div className="w-full max-w-sm flex flex-col items-center">
+      <div className="relative z-10 min-h-screen w-full flex items-center justify-center text-zinc-100 p-4 pointer-events-none">
+        <div className="w-full max-w-sm flex flex-col items-center pointer-events-auto">
           <div className="mb-8 text-center space-y-2">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/10 mb-4 ring-1 ring-white/20 backdrop-blur-sm">
               <svg
