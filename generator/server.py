@@ -1,13 +1,14 @@
 from flask import Flask, request, send_file, jsonify
 from flask_cors import CORS
-from assemble_v3 import GoldenAssembler
+from assemble_v4 import GoldenAssembler
 import os
+import base64
 
 app = Flask(__name__)
 CORS(app)  # CORS 허용
 
 # 서버 시작 시 한 번만 초기화 (JSON 로딩)
-print("[서버 초기화] GoldenAssembler 로딩 중...")
+print("[서버 초기화] GoldenAssembler V4 로딩 중...")
 assembler = GoldenAssembler(audio_folder="./youtube_audio")
 print("[서버 준비 완료] 요청 대기 중...\n")
 
@@ -22,16 +23,16 @@ def generate_audio():
         
         print(f"\n[요청 수신] '{text}'")
         
-        # 오디오 생성
-        output_path = "final_output_hybrid.mp3"
-        assembler.assemble(text, output_path)
+        # 오디오 생성 (메모리에서 처리)
+        audio_base64, timing_data = assembler.assemble(text)
         
-        # 파일 존재 확인
-        if not os.path.exists(output_path):
-            return jsonify({'error': '오디오 파일 생성 실패'}), 500
+        response = {
+            "audio_base64": audio_base64,
+            "timing_data": timing_data
+        }
         
-        print(f"[응답 전송] {output_path}\n")
-        return send_file(output_path, mimetype='audio/mpeg')
+        print(f"[응답 전송] 오디오(Base64) + 타이밍 데이터\n")
+        return jsonify(response)
     
     except Exception as e:
         print(f"[오류 발생] {str(e)}")

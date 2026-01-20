@@ -9,6 +9,8 @@ from g2pk import G2p
 import re
 import subprocess
 import tempfile
+import io
+import base64
 
 # ffmpeg 경로 설정
 AudioSegment.converter = r"C:\ffmpeg\bin\ffmpeg.exe"
@@ -346,7 +348,7 @@ class GoldenAssembler:
 
         return clip
 
-    def assemble(self, text, output_path="final_output_hybrid.mp3"):
+    def assemble(self, text, output_path=None):
         # 1. 텍스트 정리
         clean_text_input = re.sub(r'[^\w\s]', '', text)
         print(f"\n 입력: '{clean_text_input}'")
@@ -494,9 +496,12 @@ class GoldenAssembler:
                 "type": "space"
             })
 
-        combined.export(output_path, format="mp3")
-        print(f"\n 저장 완료: {output_path}")
-        return timing_data
+        # Return Base64 Encoded Audio and Timing Data
+        buffer = io.BytesIO()
+        combined.export(buffer, format="mp3")
+        audio_base64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
+        
+        return audio_base64, timing_data
 
 if __name__ == "__main__":
     import sys

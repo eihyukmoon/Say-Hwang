@@ -43,9 +43,20 @@ export default function MainPage({ onLogout, onMyPage }: MainPageProps) {
                 throw new Error(errData.error || '저장 실패');
             }
 
-            const blob = await response.blob();
+            const data = await response.json();
+            
+            // Base64 -> Blob 변환
+            const binaryString = window.atob(data.audio_base64);
+            const bytes = new Uint8Array(binaryString.length);
+            for (let i = 0; i < binaryString.length; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            const blob = new Blob([bytes], { type: 'audio/mpeg' });
+            
             const url = URL.createObjectURL(blob);
             setAudioSrc(url);
+            
+            // TODO: data.timing_data 를 활용해 자막 하이라이팅 구현 가능
 
             // 2. Supabase 저장 (비동기 처리)
             try {
