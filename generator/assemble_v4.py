@@ -496,6 +496,10 @@ class GoldenAssembler:
                 "type": "space"
             })
 
+        if output_path:
+            combined.export(output_path, format="mp3")
+            print(f"\n✅ 합성 완료: '{output_path}' 생성됨.")
+
         # Return Base64 Encoded Audio and Timing Data
         buffer = io.BytesIO()
         combined.export(buffer, format="mp3")
@@ -510,4 +514,4 @@ if __name__ == "__main__":
         text_to_speak = sys.argv[1]
     
     assembler = GoldenAssembler(audio_folder="./youtube_audio")
-    assembler.assemble(text_to_speak)   
+    assembler.assemble(text_to_speak, output_path="output.mp3")   

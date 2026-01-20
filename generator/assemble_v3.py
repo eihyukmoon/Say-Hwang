@@ -12,7 +12,7 @@ import tempfile
 
 # ffmpeg 경로 설정
 # ffmpeg 경로 설정
-# AudioSegment.converter = "ffmpeg" # 기본적으로 PATH에 있으면 주석 처리해도 됨
+AudioSegment.converter = r"C:\ffmpeg\bin\ffmpeg.exe" # 기본적으로 PATH에 있으면 주석 처리해도 됨
 
 
 # ---------------------------------------------------------
@@ -402,7 +402,7 @@ class GoldenAssembler:
                     suffix_chunk = chunk_match
                     suffix_len = length
                     src=suffix_chunk["src"]
-                    print(f"  Suffix 발견: '{target_sub} -> '{chunk_match['text']}' : {src} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
+                    print(f"  Suffix 발견: '{target_sub} -> '{chunk_match['text']}' : {src}: {chunk_match['start_ms']}~{chunk_match['start_ms'] + chunk_match['duration_ms']} {self.vectorizer.calculate_string_distance(target_sub,chunk_match['text'])}")
                     break
 
             if prefix_chunk:
