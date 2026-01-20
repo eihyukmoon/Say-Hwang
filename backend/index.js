@@ -1,9 +1,5 @@
 import express from "express"
 import cors from "cors"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
-import { exec } from "child_process"
 
 console.log("✅ index.js 시작")
 
@@ -11,7 +7,9 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.post("/api/save-story", (req, res) => {
+const PYTHON_SERVER_URL = "http://localhost:5000"
+
+app.post("/api/save-story", async (req, res) => {
   try {
     const { story } = req.body;
     console.log("요청 받은 텍스트:", story);
@@ -20,37 +18,24 @@ app.post("/api/save-story", (req, res) => {
         return res.status(400).json({ error: "텍스트가 없습니다." });
     }
 
-    // Resolve paths
-    const __filename = fileURLToPath(import.meta.url)
-    const __dirname = path.dirname(__filename)
-    const generatorScript = path.resolve(__dirname, "../generator/assemble_v3.py")
-    const generatorCwd = path.resolve(__dirname, "../generator")
-    const outputPath = path.resolve(__dirname, "../generator/final_output_hybrid.mp3")
-
-    // Python 스크립트 실행
-    // 주의: 실제 배포 환경에서는 보안을 위해 입력값(story)을 철저히 검증/이스케이프해야 합니다.
-    // 여기서는 간단히 처리합니다. 따옴표가 있는 경우 문제가 될 수 있습니다.
-    const escapedStory = story.replace(/"/g, '\\"');
-    const command = `python "${generatorScript}" "${escapedStory}"`;
-    
-    console.log("실행 명령:", command);
-    
-    exec(command, { cwd: generatorCwd }, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`실행 오류: ${error.message}`);
-            console.error(`stderr: ${stderr}`);
-            return res.status(500).json({ error: "오디오 생성 실패", details: stderr });
-        }
-        
-        console.log(`stdout: ${stdout}`);
-
-        if (!fs.existsSync(outputPath)) {
-            console.error("파일이 생성되지 않음:", outputPath);
-            return res.status(404).json({ error: "생성된 오디오 파일을 찾을 수 없습니다." });
-        }
-
-        res.sendFile(outputPath);
+    // Python Flask 서버로 요청 전달
+    const response = await fetch(`${PYTHON_SERVER_URL}/api/generate`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ text: story })
     });
+
+    if (!response.ok) {
+        const errorData = await response.json();
+        return res.status(response.status).json(errorData);
+    }
+
+    // Python 서버에서 받은 오디오 파일을 그대로 클라이언트로 전달
+    const audioBuffer = await response.arrayBuffer();
+    res.set('Content-Type', 'audio/mpeg');
+    res.send(Buffer.from(audioBuffer));
 
   } catch (err) {
     console.error("/api/save-story 처리 실패:", err)
