@@ -77,12 +77,9 @@ export default function LoginPage({ onSignUpClick, onLoginSuccess }: LoginPagePr
   return (
     <>
       {/* Background Layer */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0 z-0 w-full h-full">
         {/* @ts-ignore */}
-        <spline-viewer
-          url="https://prod.spline.design/7RzisIUMo9vQux6i/scene.splinecode"
-          style={{ width: '100%', height: '100%' }}
-        />
+        <spline-viewer url="https://prod.spline.design/7RzisIUMo9vQux6i/scene.splinecode"></spline-viewer>
       </div>
 
       {/* Content Layer */}

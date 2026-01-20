@@ -8,9 +8,12 @@ export default function LandingPage({ onStart }: LandingPageProps) {
         <div className="min-h-screen w-full flex items-center justify-center bg-zinc-950 text-zinc-100 p-4 relative overflow-hidden">
             {/* Background gradients */}
             {/* Background Spline Viewer */}
-            <div className="fixed inset-0">
+            <div className="fixed inset-0 w-full h-full">
                 {/* @ts-ignore */}
-                <spline-viewer url="https://prod.spline.design/5xsYQk4pcCREoNoe/scene.splinecode"></spline-viewer>
+                <spline-viewer
+                    url="https://prod.spline.design/uLyZFI82zYn-mCaS/scene.splinecode"
+                //style={{ width: '100%', height: '100%' }}
+                />
             </div>
 
             <div className="relative z-10 flex flex-col items-center text-center space-y-8 animate-fade-in-up">
