@@ -26,7 +26,10 @@ export default function MainPage({ onLogout, onMyPage }: MainPageProps) {
 
         try {
             setLoading(true);
-            // Python Flask Server (Direct) - Port 4000
+            // 즉시 스크롤 이동
+            nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+
+            // 1. Python 서버로 오디오 생성 요청 (Port 4000)
             const response = await fetch('http://localhost:4000/api/generate', {
                 method: 'POST',
                 headers: {
@@ -44,8 +47,45 @@ export default function MainPage({ onLogout, onMyPage }: MainPageProps) {
             const url = URL.createObjectURL(blob);
             setAudioSrc(url);
 
-            // Scroll to the next section
-            nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+            // 2. Supabase 저장 (비동기 처리)
+            try {
+                const { data: { user } } = await supabase.auth.getUser();
+                if (user) {
+                    const timestamp = new Date().getTime();
+                    const filePath = `${user.id}/${timestamp}.mp3`;
+                    
+                    // Storage 업로드
+                    const audioFile = new File([blob], "audio.mp3", { type: "audio/mpeg" });
+                    const { error: uploadError } = await supabase.storage
+                        .from('audios')
+                        .upload(filePath, audioFile);
+
+                    if (!uploadError) {
+                        // Public URL 가져오기
+                        const { data: { publicUrl } } = supabase.storage
+                            .from('audios')
+                            .getPublicUrl(filePath);
+
+                        // DB Insert
+                        const { error: dbError } = await supabase.from('generations').insert({
+                            user_id: user.id,
+                            text: text,
+                            audio_url: publicUrl
+                        });
+
+                        if (dbError) {
+                            console.error("DB Error:", dbError);
+                            alert(`저장하지 못했습니다 (DB 오류): ${dbError.message}`);
+                        }
+                    } else {
+                        console.error("Upload Error:", uploadError);
+                        alert(`저장하지 못했습니다 (업로드 오류): ${uploadError.message}`);
+                    }
+                }
+            } catch (saveWarn) {
+                console.warn("저장 실패 (재생은 가능):", saveWarn);
+            }
+
             setLoading(false);
         } catch (err) {
             alert('오류가 발생했습니다: ' + (err instanceof Error ? err.message : '알 수 없는 오류'));

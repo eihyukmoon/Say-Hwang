@@ -454,4 +454,4 @@ if __name__ == "__main__":
         text_to_speak = sys.argv[1]
     
     assembler = GoldenAssembler(audio_folder="./youtube_audio")
-    assembler.assemble(text_to_speak)
+    assembler.assemble(text_to_speak)   
