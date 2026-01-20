@@ -6,6 +6,12 @@
         "duration_ms": 240
     },
     {
+        "src": "-vR4GyI0xTk",
+        "word": "첩",
+        "start_ms": 12830,
+        "duration_ms": 140
+    },
+    {
         "src": "KC4R8nSBsNs",
         "word": "갈",
         "start_ms": 5800,
@@ -17,6 +23,7 @@
         "start_ms": 54700,
         "duration_ms": 300
     },
+
     {
         "src": "B-bNigfnoTs",
         "word": "갑",
@@ -124,6 +131,30 @@
         "word": "굴",
         "start_ms": 28290,
         "duration_ms": 220
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "성",
+        "start_ms": 35637,
+        "duration_ms": 275
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "픈",
+        "start_ms": 30208,
+        "duration_ms": 160
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "떨",
+        "start_ms": 45865.0,
+        "duration_ms": 120
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "흥",
+        "start_ms": 26218,
+        "duration_ms": 138
     },
     {
         "src": "-d-P7D0jPAc",
@@ -244,6 +275,24 @@
         "word": "납",
         "start_ms": 17850,
         "duration_ms": 250
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "모",
+        "start_ms": 6300,
+        "duration_ms": 200
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "카",
+        "start_ms": 12600,
+        "duration_ms": 100
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "도",
+        "start_ms": 11825,
+        "duration_ms": 190
     },
     {
         "src": "-vR4GyI0xTk",
@@ -588,6 +637,12 @@
         "duration_ms": 210
     },
     {
+        "src": "-vR4GyI0xTk",
+        "word": "흐",
+        "start_ms": 19930,
+        "duration_ms": 160
+    },
+    {
         "src": "lE5ZcbgCxuQ",
         "word": "밖",
         "start_ms": 32380,
@@ -626,8 +681,8 @@
     {
         "src": "-vR4GyI0xTk",
         "word": "볼",
-        "start_ms": 32930,
-        "duration_ms": 220
+        "start_ms": 32960,
+        "duration_ms": 150
     },
     {
         "src": "m4qCZ6jAfaw",
@@ -644,8 +699,20 @@
     {
         "src": "-d-P7D0jPAc",
         "word": "뵙",
-        "start_ms": 28490,
-        "duration_ms": 210
+        "start_ms": 28500,
+        "duration_ms": 167
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "런",
+        "start_ms": 38670.0,
+        "duration_ms": 200.0
+    },
+    {
+        "src": "-d-P7D0jPAc",
+        "word": "쫌",
+        "start_ms": 38400,
+        "duration_ms": 180
     },
     {
         "src": "K21IML4SDik",
@@ -876,6 +943,18 @@
         "duration_ms": 280
     },
     {
+        "src": "-vR4GyI0xTk",
+        "word": "로",
+        "start_ms": 24800,
+        "duration_ms": 137
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "싹",
+        "start_ms": 10060,
+        "duration_ms": 190
+    },
+    {
         "src": "o4ZMG18vdEk",
         "word": "쿠",
         "start_ms": 21450,
@@ -883,9 +962,33 @@
     },
     {
         "src": "-vR4GyI0xTk",
+        "word": "믄",
+        "start_ms": 2670,
+        "duration_ms": 130
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "딸",
+        "start_ms": 10350,
+        "duration_ms": 120
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "돼",
+        "start_ms": 2820,
+        "duration_ms": 110
+    },
+    {
+        "src": "-vR4GyI0xTk",
         "word": "이",
         "start_ms": 24102,
         "duration_ms": 320
+    },
+    {
+        "src": "-vR4GyI0xTk",
+        "word": "함",
+        "start_ms": 32670,
+        "duration_ms": 140
     },
     {
         "src": "-vR4GyI0xTk",
@@ -1052,8 +1155,8 @@
     {
         "src": "5zCgDPxZPvI",
         "word": "은",
-        "start_ms": 13730,
-        "duration_ms": 440
+        "start_ms": 13768,
+        "duration_ms": 420
     },
     {
         "src": "lE5ZcbgCxuQ",

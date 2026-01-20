@@ -320,260 +320,271 @@
             },
             {
                 "text": "능",
-                "start_ms": 9120.0,
-                "duration_ms": 70.0
+                "start_ms": 9060.0,
+                "duration_ms": 110.0
             },
             {
                 "text": "합",
-                "start_ms": 9210.0,
-                "duration_ms": 60.0
+                "start_ms": 9180.0,
+                "duration_ms": 100.0
             },
             {
                 "text": "니",
-                "start_ms": 9290.0,
-                "duration_ms": 90.0
+                "start_ms": 9300.0,
+                "duration_ms": 100.0
             },
             {
                 "text": "까",
-                "start_ms": 9400.0,
-                "duration_ms": 950.0
+                "start_ms": 9435.0,
+                "duration_ms": 290.0
             }
         ]
     },
     {
         "word": "흥미로운",
-        "start_ms": 26290.0,
+        "start_ms": 26218.0,
         "syllables": [
             {
                 "text": "흥",
-                "start_ms": 26290.0,
-                "duration_ms": 90.0
+                "start_ms": 26218.0,
+                "duration_ms": 138.0
             },
             {
                 "text": "미",
-                "start_ms": 26400.0,
-                "duration_ms": 100.0
+                "start_ms": 26350.0,
+                "duration_ms": 137.0
             },
             {
                 "text": "로",
                 "start_ms": 26520.0,
-                "duration_ms": 90.0
+                "duration_ms": 120.0
             },
             {
                 "text": "운",
-                "start_ms": 26630.0,
-                "duration_ms": 150.0
+                "start_ms": 26610.0,
+                "duration_ms": 130.0
             }
         ]
     },
     {
-        "word": "계획인",
-        "start_ms": 26810.0,
+        "word": "계획",
+        "start_ms": 26756.0,
         "syllables": [
             {
                 "text": "계",
-                "start_ms": 26810.0,
-                "duration_ms": 160.0
+                "start_ms": 26756.0,
+                "duration_ms": 186.0
             },
             {
                 "text": "획",
-                "start_ms": 26990.0,
-                "duration_ms": 140.0
+                "start_ms": 26938.0,
+                "duration_ms": 130.0
+            }
+        ]
+    },
+    {
+        "word": "이긴",
+        "start_ms": 27073.0,
+        "syllables": [
+            {
+                "text": "이",
+                "start_ms": 27073.0,
+                "duration_ms": 150.0
             },
             {
-                "text": "인",
-                "start_ms": 27150.0,
-                "duration_ms": 280.0
+                "text": "긴",
+                "start_ms": 27225.0,
+                "duration_ms": 120.0
             }
         ]
     },
     {
         "word": "한데",
-        "start_ms": 27460.0,
+        "start_ms": 27420.0,
         "syllables": [
             {
                 "text": "한",
-                "start_ms": 27460.0,
-                "duration_ms": 120.0
+                "start_ms": 27420.0,
+                "duration_ms": 210.0
             },
             {
                 "text": "데",
                 "start_ms": 27600.0,
-                "duration_ms": 490.0
+                "duration_ms": 410.0
             }
         ]
     },
     {
         "word": "얼굴",
-        "start_ms": 28120.0,
+        "start_ms": 28060.0,
         "syllables": [
             {
                 "text": "얼",
-                "start_ms": 28120.0,
-                "duration_ms": 180.0
+                "start_ms": 28060.0,
+                "duration_ms": 210.0
             },
             {
                 "text": "굴",
-                "start_ms": 28320.0,
-                "duration_ms": 230.0
+                "start_ms": 28280.0,
+                "duration_ms": 210.0
             }
         ]
     },
     {
         "word": "뵙고",
-        "start_ms": 28580.0,
+        "start_ms": 28500.0,
         "syllables": [
             {
                 "text": "뵙",
-                "start_ms": 28580.0,
-                "duration_ms": 140.0
+                "start_ms": 28500.0,
+                "duration_ms": 167.0
             },
             {
                 "text": "고",
-                "start_ms": 28740.0,
-                "duration_ms": 390.0
+                "start_ms": 28735.0,
+                "duration_ms": 345.0
             }
         ]
     },
     {
         "word": "말씀",
-        "start_ms": 29180.0,
+        "start_ms": 29120.0,
         "syllables": [
             {
                 "text": "말",
-                "start_ms": 29180.0,
-                "duration_ms": 170.0
+                "start_ms": 29120.0,
+                "duration_ms": 150.0
             },
             {
                 "text": "씀",
-                "start_ms": 29380.0,
-                "duration_ms": 80.0
+                "start_ms": 29300.0,
+                "duration_ms": 136.0
             }
         ]
     },
     {
         "word": "나누면",
-        "start_ms": 29490.0,
+        "start_ms": 29436.0,
         "syllables": [
             {
                 "text": "나",
-                "start_ms": 29490.0,
-                "duration_ms": 80.0
+                "start_ms": 29436.0,
+                "duration_ms": 90.0
             },
             {
                 "text": "누",
-                "start_ms": 29590.0,
-                "duration_ms": 70.0
+                "start_ms": 29520.0,
+                "duration_ms": 60.0
             },
             {
                 "text": "면",
-                "start_ms": 29680.0,
-                "duration_ms": 80.0
+                "start_ms": 29615.0,
+                "duration_ms": 100.0
             }
         ]
     },
     {
         "word": "어떨까",
-        "start_ms": 29790.0,
+        "start_ms": 29709.0,
         "syllables": [
             {
                 "text": "어",
-                "start_ms": 29790.0,
-                "duration_ms": 130.0
+                "start_ms": 29709.0,
+                "duration_ms": 90.0
             },
             {
                 "text": "떨",
-                "start_ms": 29940.0,
-                "duration_ms": 80.0
+                "start_ms": 29830.0,
+                "duration_ms": 100.0
             },
             {
                 "text": "까",
-                "start_ms": 30040.0,
-                "duration_ms": 80.0
+                "start_ms": 29970.0,
+                "duration_ms": 100.0
             }
         ]
     },
     {
         "word": "싶은데요",
-        "start_ms": 30140.0,
+        "start_ms": 30070.0,
         "syllables": [
             {
                 "text": "싶",
-                "start_ms": 30140.0,
-                "duration_ms": 120.0
+                "start_ms": 30070.0,
+                "duration_ms": 114.0
             },
             {
                 "text": "은",
-                "start_ms": 30280.0,
-                "duration_ms": 100.0
+                "start_ms": 30208.0,
+                "duration_ms": 160.0
             },
             {
                 "text": "데",
-                "start_ms": 30380.0,
-                "duration_ms": 80.0
+                "start_ms": 30370.0,
+                "duration_ms": 160.0
             },
             {
                 "text": "요",
-                "start_ms": 30500.0,
-                "duration_ms": 370.0
+                "start_ms": 30535.0,
+                "duration_ms": 210.0
             }
         ]
     },
     {
         "word": "제가",
-        "start_ms": 35420.0,
+        "start_ms": 35378.0,
         "syllables": [
             {
                 "text": "제",
-                "start_ms": 35420.0,
-                "duration_ms": 150.0
+                "start_ms": 35378.0,
+                "duration_ms": 140.0
             },
             {
                 "text": "가",
-                "start_ms": 35590.0,
-                "duration_ms": 120.0
+                "start_ms": 35520.0,
+                "duration_ms": 110.0
             }
         ]
     },
     {
-        "word": "성직자가",
-        "start_ms": 35730.0,
+        "word": "성직자라",
+        "start_ms": 35637.0,
         "syllables": [
             {
                 "text": "성",
-                "start_ms": 35730.0,
-                "duration_ms": 140.0
+                "start_ms": 35637.0,
+                "duration_ms": 275.0
             },
             {
                 "text": "직",
-                "start_ms": 35890.0,
-                "duration_ms": 140.0
+                "start_ms": 35927.0,
+                "duration_ms": 134.0
             },
             {
                 "text": "자",
-                "start_ms": 36050.0,
-                "duration_ms": 160.0
+                "start_ms": 36120.0,
+                "duration_ms": 190.0
             },
             {
-                "text": "가",
-                "start_ms": 36230.0,
-                "duration_ms": 340.0
+                "text": "라",
+                "start_ms": 36309.0,
+                "duration_ms": 255.0
             }
         ]
     },
     {
         "word": "예배",
-        "start_ms": 36610.0,
+        "start_ms": 36600.0,
         "syllables": [
             {
                 "text": "예",
-                "start_ms": 36610.0,
-                "duration_ms": 210.0
+                "start_ms": 36600.0,
+                "duration_ms": 160.0
             },
             {
                 "text": "배",
-                "start_ms": 36830.0,
-                "duration_ms": 100.0
+                "start_ms": 36760.0,
+                "duration_ms": 110.0
             }
         ]
     },
@@ -600,91 +611,85 @@
     },
     {
         "word": "자리를",
-        "start_ms": 37740.0,
+        "start_ms": 37674.0,
         "syllables": [
             {
                 "text": "자",
-                "start_ms": 37740.0,
-                "duration_ms": 70.0
+                "start_ms": 37674.0,
+                "duration_ms": 87.0
             },
             {
                 "text": "리",
-                "start_ms": 37830.0,
-                "duration_ms": 100.0
+                "start_ms": 37760.0,
+                "duration_ms": 120.0
             },
             {
                 "text": "를",
-                "start_ms": 37950.0,
-                "duration_ms": 90.0
+                "start_ms": 37865.0,
+                "duration_ms": 120.0
             }
         ]
     },
     {
-        "word": "비우기",
-        "start_ms": 38070.0,
+        "word": "비우기가",
+        "start_ms": 38000.0,
         "syllables": [
             {
                 "text": "비",
-                "start_ms": 38070.0,
-                "duration_ms": 50.0
+                "start_ms": 38000.0,
+                "duration_ms": 100.0
             },
             {
                 "text": "우",
-                "start_ms": 38130.0,
-                "duration_ms": 50.0
+                "start_ms": 38100.0,
+                "duration_ms": 85.0
             },
             {
                 "text": "기",
-                "start_ms": 38190.0,
-                "duration_ms": 130.0
-            }
-        ]
-    },
-    {
-        "word": "가",
-        "start_ms": 38350.0,
-        "syllables": [
+                "start_ms": 38185.0,
+                "duration_ms": 100.0
+            },
             {
                 "text": "가",
-                "start_ms": 38350.0,
-                "duration_ms": 80.0
+                "start_ms": 38280.0,
+                "duration_ms": 100.0
             }
         ]
     },
     {
         "word": "좀",
-        "start_ms": 38450.0,
+        "start_ms": 38400.0,
         "syllables": [
             {
                 "text": "좀",
-                "start_ms": 38450.0,
-                "duration_ms": 170.0
+                "start_ms": 38400.0,
+                "duration_ms": 180.0
             }
         ]
     },
     {
         "word": "그렇네요",
-        "start_ms": 38650.0,
+        "start_ms": 38620.0,
         "syllables": [
             {
                 "text": "그",
-                "start_ms": 38650.0,
+                "start_ms": 38620.0,
                 "duration_ms": 50.0
             },
             {
                 "text": "렇",
-                "start_ms": 38710.0,
-                "duration_ms": 30.0
+                "start_ms": 38670.0,
+                "duration_ms": 200.0
             },
             {
                 "text": "네",
-                "start_ms": 38750.0,
-                "duration_ms": 50.0
+                "start_ms": 38880.0,
+                "duration_ms": 125.0
             },
             {
                 "text": "요",
-                "start_ms": 38810.0,
-                "duration_ms": 730.0
+                "start_ms": 39010.0,
+                "duration_ms": 190.0
             }
         ]
     },
@@ -695,74 +700,74 @@
             {
                 "text": "사",
                 "start_ms": 43970.0,
-                "duration_ms": 160.0
-            },
-            {
-                "text": "장",
-                "start_ms": 44150.0,
-                "duration_ms": 80.0
-            },
-            {
-                "text": "님",
-                "start_ms": 44250.0,
-                "duration_ms": 80.0
-            },
-            {
-                "text": "께",
-                "start_ms": 44350.0,
                 "duration_ms": 100.0
             },
             {
+                "text": "장",
+                "start_ms": 44077.0,
+                "duration_ms": 140.0
+            },
+            {
+                "text": "님",
+                "start_ms": 44230.0,
+                "duration_ms": 130.0
+            },
+            {
+                "text": "께",
+                "start_ms": 44400.0,
+                "duration_ms": 900.0
+            },
+            {
                 "text": "서",
-                "start_ms": 44470.0,
-                "duration_ms": 200.0
+                "start_ms": 44530.0,
+                "duration_ms": 140.0
             }
         ]
     },
     {
         "word": "수리남에",
-        "start_ms": 44710.0,
+        "start_ms": 44620.0,
         "syllables": [
             {
                 "text": "수",
-                "start_ms": 44710.0,
-                "duration_ms": 140.0
+                "start_ms": 44620.0,
+                "duration_ms": 160.0
             },
             {
                 "text": "리",
-                "start_ms": 44870.0,
-                "duration_ms": 80.0
+                "start_ms": 44785.0,
+                "duration_ms":110.0
             },
             {
                 "text": "남",
-                "start_ms": 44970.0,
-                "duration_ms": 120.0
+                "start_ms": 44928.0,
+                "duration_ms": 129.0
             },
             {
                 "text": "에",
-                "start_ms": 45110.0,
+                "start_ms": 45050.0,
                 "duration_ms": 100.0
             }
         ]
     },
     {
         "word": "오시는",
-        "start_ms": 45230.0,
+        "start_ms": 45140.0,
         "syllables": [
             {
                 "text": "오",
-                "start_ms": 45230.0,
-                "duration_ms": 160.0
+                "start_ms": 45140.0,
+                "duration_ms": 126.0
             },
             {
                 "text": "시",
-                "start_ms": 45410.0,
-                "duration_ms": 100.0
+                "start_ms": 45270.0,
+                "duration_ms": 67.0
             },
             {
                 "text": "는",
-                "start_ms": 45530.0,
-                "duration_ms": 80.0
+                "start_ms": 45340.0,
+                "duration_ms": 230.0
             }
         ]
     },
@@ -779,53 +784,53 @@
     },
     {
         "word": "어떨까요",
-        "start_ms": 45770.0,
+        "start_ms": 45670.0,
         "syllables": [
             {
                 "text": "어",
-                "start_ms": 45770.0,
-                "duration_ms": 110.0
+                "start_ms": 45670.0,
+                "duration_ms": 150.0
             },
             {
                 "text": "떨",
-                "start_ms": 45890.0,
-                "duration_ms": 70.0
+                "start_ms": 45865.0,
+                "duration_ms": 120.0
             },
             {
                 "text": "까",
-                "start_ms": 45970.0,
-                "duration_ms": 50.0
+                "start_ms": 46050.0,
+                "duration_ms": 80.0
             },
             {
                 "text": "요",
-                "start_ms": 46030.0,
-                "duration_ms": 680.0
+                "start_ms": 46150.0,
+                "duration_ms": 200.0
             }
         ]
     },
     {
         "word": "할렐루야",
-        "start_ms": 55100.0,
+        "start_ms": 55080.0,
         "syllables": [
             {
                 "text": "할",
-                "start_ms": 55100.0,
+                "start_ms": 55080.0,
                 "duration_ms": 120.0
             },
             {
                 "text": "렐",
-                "start_ms": 55240.0,
-                "duration_ms": 50.0
+                "start_ms": 55180.0,
+                "duration_ms": 90.0
             },
             {
                 "text": "루",
-                "start_ms": 55310.0,
-                "duration_ms": 110.0
+                "start_ms": 55300.0,
+                "duration_ms": 160.0
             },
             {
                 "text": "야",
-                "start_ms": 55440.0,
-                "duration_ms": 320.0
+                "start_ms": 55490.0,
+                "duration_ms": 180.0
             }
         ]
     },
@@ -836,27 +841,27 @@
             {
                 "text": "감",
                 "start_ms": 55780.0,
-                "duration_ms": 180.0
+                "duration_ms": 100.0
             },
             {
                 "text": "사",
-                "start_ms": 55980.0,
-                "duration_ms": 80.0
+                "start_ms": 55960.0,
+                "duration_ms": 60.0
             },
             {
                 "text": "합",
-                "start_ms": 56080.0,
-                "duration_ms": 40.0
+                "start_ms": 56010.0,
+                "duration_ms": 150.0
             },
             {
                 "text": "니",
-                "start_ms": 56140.0,
+                "start_ms": 56160.0,
                 "duration_ms": 60.0
             },
             {
                 "text": "다",
                 "start_ms": 56220.0,
-                "duration_ms": 540.0
+                "duration_ms": 270.0
             }
         ]
     }
