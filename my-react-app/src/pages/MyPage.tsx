@@ -113,24 +113,6 @@ export default function MyPage({ onBack }: MyPageProps) {
                             </p>
                         </div>
                     </div>
-
-                    <div className="pt-6 border-t border-white/10">
-                        <h3 className="text-sm font-medium text-zinc-400 mb-4">계정 설정</h3>
-                        <div className="space-y-4">
-                            <div className="flex items-center justify-between p-4 rounded-2xl bg-black/20 hover:bg-black/30 transition-colors cursor-pointer">
-                                <span>프로필 수정</span>
-                                <svg className="w-5 h-5 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                            </div>
-                            <div className="flex items-center justify-between p-4 rounded-2xl bg-black/20 hover:bg-black/30 transition-colors cursor-pointer">
-                                <span>알림 설정</span>
-                                <svg className="w-5 h-5 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 {/* History Section */}
