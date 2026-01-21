@@ -1,0 +1,61 @@
+[
+    {
+        "word": "쪽",
+        "start_ms": 11890.0,
+        "syllables": [
+            {
+                "text": "쪽",
+                "start_ms": 11890.0,
+                "duration_ms": 330.0
+            }
+        ]
+    },
+    {
+        "word": "같은",
+        "start_ms": 12250.0,
+        "syllables": [
+            {
+                "text": "같",
+                "start_ms": 12250.0,
+                "duration_ms": 120.0
+            },
+            {
+                "text": "은",
+                "start_ms": 12390.0,
+                "duration_ms": 170.0
+            }
+        ]
+    },
+    {
+        "word": "조선",
+        "start_ms": 12590.0,
+        "syllables": [
+            {
+                "text": "조",
+                "start_ms": 12590.0,
+                "duration_ms": 140.0
+            },
+            {
+                "text": "선",
+                "start_ms": 12750.0,
+                "duration_ms": 170.0
+            }
+        ]
+    },
+    {
+        "word": "것들",
+        "start_ms": 12950.0,
+        "syllables": [
+            {
+                "text": "것",
+                "start_ms": 12950.0,
+                "duration_ms": 170.0
+            },
+            {
+                "text": "들",
+                "start_ms": 13150.0,
+                "duration_ms": 360.0
+            }
+        ]
+    }
+]

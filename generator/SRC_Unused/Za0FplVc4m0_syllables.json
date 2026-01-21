@@ -1,0 +1,226 @@
+[
+    {
+        "word": "금방",
+        "start_ms": 60.0,
+        "syllables": [
+            {
+                "text": "금",
+                "start_ms": 60.0,
+                "duration_ms": 90.0
+            },
+            {
+                "text": "방",
+                "start_ms": 180.0,
+                "duration_ms": 190.0
+            }
+        ]
+    },
+    {
+        "word": "까먹고",
+        "start_ms": 400.0,
+        "syllables": [
+            {
+                "text": "까",
+                "start_ms": 400.0,
+                "duration_ms": 180.0
+            },
+            {
+                "text": "먹",
+                "start_ms": 600.0,
+                "duration_ms": 120.0
+            },
+            {
+                "text": "고",
+                "start_ms": 740.0,
+                "duration_ms": 420.0
+            }
+        ]
+    },
+    {
+        "word": "언제",
+        "start_ms": 1440.0,
+        "syllables": [
+            {
+                "text": "언",
+                "start_ms": 1440.0,
+                "duration_ms": 400.0
+            },
+            {
+                "text": "제",
+                "start_ms": 1860.0,
+                "duration_ms": 160.0
+            }
+        ]
+    },
+    {
+        "word": "그랬냐는",
+        "start_ms": 2040.0,
+        "syllables": [
+            {
+                "text": "그",
+                "start_ms": 2040.0,
+                "duration_ms": 140.0
+            },
+            {
+                "text": "랬",
+                "start_ms": 2200.0,
+                "duration_ms": 70.0
+            },
+            {
+                "text": "냐",
+                "start_ms": 2290.0,
+                "duration_ms": 230.0
+            },
+            {
+                "text": "는",
+                "start_ms": 2540.0,
+                "duration_ms": 170.0
+            }
+        ]
+    },
+    {
+        "word": "듯",
+        "start_ms": 2740.0,
+        "syllables": [
+            {
+                "text": "듯",
+                "start_ms": 2740.0,
+                "duration_ms": 220.0
+            }
+        ]
+    },
+    {
+        "word": "잘",
+        "start_ms": 3740.0,
+        "syllables": [
+            {
+                "text": "잘",
+                "start_ms": 3740.0,
+                "duration_ms": 350.0
+            }
+        ]
+    },
+    {
+        "word": "먹고",
+        "start_ms": 4120.0,
+        "syllables": [
+            {
+                "text": "먹",
+                "start_ms": 4120.0,
+                "duration_ms": 100.0
+            },
+            {
+                "text": "고",
+                "start_ms": 4240.0,
+                "duration_ms": 130.0
+            }
+        ]
+    },
+    {
+        "word": "잘",
+        "start_ms": 4400.0,
+        "syllables": [
+            {
+                "text": "잘",
+                "start_ms": 4400.0,
+                "duration_ms": 250.0
+            }
+        ]
+    },
+    {
+        "word": "살",
+        "start_ms": 4680.0,
+        "syllables": [
+            {
+                "text": "살",
+                "start_ms": 4680.0,
+                "duration_ms": 150.0
+            }
+        ]
+    },
+    {
+        "word": "테니까",
+        "start_ms": 4860.0,
+        "syllables": [
+            {
+                "text": "테",
+                "start_ms": 4860.0,
+                "duration_ms": 140.0
+            },
+            {
+                "text": "니",
+                "start_ms": 5020.0,
+                "duration_ms": 160.0
+            },
+            {
+                "text": "까",
+                "start_ms": 5200.0,
+                "duration_ms": 140.0
+            }
+        ]
+    },
+    {
+        "word": "이번엔",
+        "start_ms": 5840.0,
+        "syllables": [
+            {
+                "text": "이",
+                "start_ms": 5840.0,
+                "duration_ms": 220.0
+            },
+            {
+                "text": "번",
+                "start_ms": 6080.0,
+                "duration_ms": 260.0
+            },
+            {
+                "text": "엔",
+                "start_ms": 6360.0,
+                "duration_ms": 260.0
+            }
+        ]
+    },
+    {
+        "word": "뭐지",
+        "start_ms": 7860.0,
+        "syllables": [
+            {
+                "text": "뭐",
+                "start_ms": 7860.0,
+                "duration_ms": 40.0
+            },
+            {
+                "text": "지",
+                "start_ms": 7920.0,
+                "duration_ms": 540.0
+            }
+        ]
+    },
+    {
+        "word": "하는",
+        "start_ms": 8480.0,
+        "syllables": [
+            {
+                "text": "하",
+                "start_ms": 8480.0,
+                "duration_ms": 580.0
+            },
+            {
+                "text": "는",
+                "start_ms": 9080.0,
+                "duration_ms": 250.0
+            }
+        ]
+    },
+    {
+        "word": "게",
+        "start_ms": 9360.0,
+        "syllables": [
+            {
+                "text": "게",
+                "start_ms": 9360.0,
+                "duration_ms": 660.0
+            }
+        ]
+    }
+]

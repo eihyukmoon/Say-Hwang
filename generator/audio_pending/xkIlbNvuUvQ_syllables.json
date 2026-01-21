@@ -1,0 +1,233 @@
+[
+    {
+        "word": "포기하지",
+        "start_ms": 1650.0,
+        "syllables": [
+            {
+                "text": "포",
+                "start_ms": 1650.0,
+                "duration_ms": 100.0
+            },
+            {
+                "text": "기",
+                "start_ms": 1770.0,
+                "duration_ms": 80.0
+            },
+            {
+                "text": "하",
+                "start_ms": 1870.0,
+                "duration_ms": 80.0
+            },
+            {
+                "text": "지",
+                "start_ms": 1970.0,
+                "duration_ms": 80.0
+            }
+        ]
+    },
+    {
+        "word": "말고",
+        "start_ms": 2070.0,
+        "syllables": [
+            {
+                "text": "말",
+                "start_ms": 2070.0,
+                "duration_ms": 140.0
+            },
+            {
+                "text": "고",
+                "start_ms": 2230.0,
+                "duration_ms": 560.0
+            }
+        ]
+    },
+    {
+        "word": "마지막까지",
+        "start_ms": 3550.0,
+        "syllables": [
+            {
+                "text": "마",
+                "start_ms": 3550.0,
+                "duration_ms": 240.0
+            },
+            {
+                "text": "지",
+                "start_ms": 3810.0,
+                "duration_ms": 70.0
+            },
+            {
+                "text": "막",
+                "start_ms": 3900.0,
+                "duration_ms": 90.0
+            },
+            {
+                "text": "까",
+                "start_ms": 4010.0,
+                "duration_ms": 60.0
+            },
+            {
+                "text": "지",
+                "start_ms": 4090.0,
+                "duration_ms": 130.0
+            }
+        ]
+    },
+    {
+        "word": "최선을",
+        "start_ms": 4250.0,
+        "syllables": [
+            {
+                "text": "최",
+                "start_ms": 4250.0,
+                "duration_ms": 120.0
+            },
+            {
+                "text": "선",
+                "start_ms": 4390.0,
+                "duration_ms": 80.0
+            },
+            {
+                "text": "을",
+                "start_ms": 4490.0,
+                "duration_ms": 90.0
+            }
+        ]
+    },
+    {
+        "word": "다하다",
+        "start_ms": 4610.0,
+        "syllables": [
+            {
+                "text": "다",
+                "start_ms": 4610.0,
+                "duration_ms": 120.0
+            },
+            {
+                "text": "하",
+                "start_ms": 4750.0,
+                "duration_ms": 60.0
+            },
+            {
+                "text": "다",
+                "start_ms": 4830.0,
+                "duration_ms": 80.0
+            }
+        ]
+    },
+    {
+        "word": "보면",
+        "start_ms": 4930.0,
+        "syllables": [
+            {
+                "text": "보",
+                "start_ms": 4930.0,
+                "duration_ms": 100.0
+            },
+            {
+                "text": "면",
+                "start_ms": 5050.0,
+                "duration_ms": 570.0
+            }
+        ]
+    },
+    {
+        "word": "나중에",
+        "start_ms": 6350.0,
+        "syllables": [
+            {
+                "text": "나",
+                "start_ms": 6350.0,
+                "duration_ms": 140.0
+            },
+            {
+                "text": "중",
+                "start_ms": 6510.0,
+                "duration_ms": 80.0
+            },
+            {
+                "text": "에",
+                "start_ms": 6610.0,
+                "duration_ms": 70.0
+            }
+        ]
+    },
+    {
+        "word": "좋은",
+        "start_ms": 6700.0,
+        "syllables": [
+            {
+                "text": "좋",
+                "start_ms": 6700.0,
+                "duration_ms": 130.0
+            },
+            {
+                "text": "은",
+                "start_ms": 6850.0,
+                "duration_ms": 80.0
+            }
+        ]
+    },
+    {
+        "word": "결과가",
+        "start_ms": 6950.0,
+        "syllables": [
+            {
+                "text": "결",
+                "start_ms": 6950.0,
+                "duration_ms": 110.0
+            },
+            {
+                "text": "과",
+                "start_ms": 7080.0,
+                "duration_ms": 90.0
+            },
+            {
+                "text": "가",
+                "start_ms": 7190.0,
+                "duration_ms": 60.0
+            }
+        ]
+    },
+    {
+        "word": "나오지",
+        "start_ms": 7280.0,
+        "syllables": [
+            {
+                "text": "나",
+                "start_ms": 7280.0,
+                "duration_ms": 20.0
+            },
+            {
+                "text": "오",
+                "start_ms": 7310.0,
+                "duration_ms": 50.0
+            },
+            {
+                "text": "지",
+                "start_ms": 7370.0,
+                "duration_ms": 170.0
+            }
+        ]
+    },
+    {
+        "word": "않을까",
+        "start_ms": 7570.0,
+        "syllables": [
+            {
+                "text": "않",
+                "start_ms": 7570.0,
+                "duration_ms": 80.0
+            },
+            {
+                "text": "을",
+                "start_ms": 7670.0,
+                "duration_ms": 50.0
+            },
+            {
+                "text": "까",
+                "start_ms": 7740.0,
+                "duration_ms": 80.0
+            }
+        ]
+    }
+]
