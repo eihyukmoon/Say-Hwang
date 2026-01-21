@@ -63,8 +63,8 @@ class KoreanPhoneticVectorizer:
 # ---------------------------------------------------------
 class GoldenAssembler:
     def __init__(self, audio_folder, json_path="./single_best.json"):
-        self.audio_folder = audio_folder
-        self.json_path = json_path
+        self.audio_folder = os.path.abspath(audio_folder)
+        self.json_path = os.path.abspath(json_path)
         
         self.golden_map = {}
         self.chunk_prefix = {}
@@ -319,9 +319,11 @@ class GoldenAssembler:
             if audio_path:
                 try:
                     self.audio_cache[src_id] = AudioSegment.from_file(audio_path)
-                except:
+                except Exception as e:
+                    print(f"[ERROR] {audio_path} 로드 실패: {e}")
                     return None
             else:
+                print(f"[ERROR] {src_id}의 오디오 파일을 찾을 수 없음 (.mp3, .wav, .m4a)")
                 return None
 
         full_audio = self.audio_cache[src_id]
@@ -330,9 +332,11 @@ class GoldenAssembler:
 
         # 2. 범위 안전 장치 (오디오 길이 초과 방지)
         if start >= len(full_audio):
+            print(f"[ERROR] {src_id}: start_ms({start}) >= audio_length({len(full_audio)})")
             return None
         
         if start + dur > len(full_audio):
+            print(f"[WARN] {src_id}: duration 초과, 자동 조정 {dur}ms -> {len(full_audio) - start}ms")
             dur = len(full_audio) - start
 
         # 3. 자르기 (Trimming)
@@ -449,6 +453,8 @@ class GoldenAssembler:
                 clip = self._apply_smart_speed(clip, 200*self._get_char_weight(target_char,islast))
                 
                 src=info["src"]
+                print(f"  Middle 발견: '{char} -> {target_char}' : {src} {self.vectorizer.calculate_string_distance(char,target_char)}")
+
                 
                 if clip:
                     duration = len(clip)
@@ -498,7 +504,7 @@ class GoldenAssembler:
 
         if output_path:
             combined.export(output_path, format="mp3")
-            print(f"\n✅ 합성 완료: '{output_path}' 생성됨.")
+            print(f"\n[OK] 합성 완료: '{output_path}' 생성됨.")
 
         # Return Base64 Encoded Audio and Timing Data
         buffer = io.BytesIO()
@@ -513,5 +519,5 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         text_to_speak = sys.argv[1]
     
-    assembler = GoldenAssembler(audio_folder="./youtube_audio")
+    assembler = GoldenAssembler(audio_folder="youtube_audio")
     assembler.assemble(text_to_speak, output_path="output.mp3")   
