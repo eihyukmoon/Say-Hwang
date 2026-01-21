@@ -27,12 +27,12 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
             setLoading(true);
 
             // 1. Python 서버로 오디오 생성 요청 (via Node Proxy)
-            const response = await fetch('/api/save-story', {
+            const response = await fetch('/api/generate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ story: text }),
+                body: JSON.stringify({ text: text }),
             });
 
             if (!response.ok) {
@@ -40,7 +40,17 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
                 throw new Error(errData.error || '저장 실패');
             }
 
-            const blob = await response.blob();
+            // JSON 응답 파싱 및 Base64 디코딩
+            const data = await response.json();
+            
+            // Base64 -> Blob 변환
+            const binaryString = window.atob(data.audio_base64);
+            const bytes = new Uint8Array(binaryString.length);
+            for (let i = 0; i < binaryString.length; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            const blob = new Blob([bytes], { type: 'audio/mpeg' });
+            
             const url = URL.createObjectURL(blob);
 
             // 2. Supabase 저장 (비동기 처리)

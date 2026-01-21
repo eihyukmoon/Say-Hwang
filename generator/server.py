@@ -24,8 +24,9 @@ def generate_audio():
         print(f"\n[요청 수신] '{text}'")
         
         # 오디오 생성 (메모리에서 처리)
-        audio_base64, timing_data = assembler.assemble(text)
-        
+        #audio_base64, timing_data = assembler.assemble(text)
+        audio_base64, timing_data = assembler.assemble(text,"result.mp3")
+
         response = {
             "audio_base64": audio_base64,
             "timing_data": timing_data
