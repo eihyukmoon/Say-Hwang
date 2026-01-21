@@ -4,10 +4,10 @@ import { supabase } from "../lib/supabaseClient";
 type MainPageProps = {
     onLogout: () => void;
     onMyPage: () => void;
-    onGenerateSuccess: (audioUrl: string, text: string) => void;
+    onGenerateStart: (text: string) => void;
 };
 
-export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: MainPageProps) {
+export default function MainPage({ onLogout, onMyPage, onGenerateStart }: MainPageProps) {
     const textareaRef = useRef<HTMLTextAreaElement>(null);
     const [loading, setLoading] = useState(false);
 
@@ -16,88 +16,16 @@ export default function MainPage({ onLogout, onMyPage, onGenerateSuccess }: Main
         onLogout();
     };
 
-    const handleSave = async () => {
+    const handleSave = () => {
         const text = textareaRef.current?.value;
         if (!text || text.trim().length === 0) {
             alert('이야기를 입력해주세요');
             return;
         }
-
-        try {
-            setLoading(true);
-
-            // 1. Python 서버로 오디오 생성 요청 (via Node Proxy)
-            const response = await fetch('/api/generate', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ text: text }),
-            });
-
-            if (!response.ok) {
-                const errData = await response.json();
-                throw new Error(errData.error || '저장 실패');
-            }
-
-            // JSON 응답 파싱 및 Base64 디코딩
-            const data = await response.json();
-            
-            // Base64 -> Blob 변환
-            const binaryString = window.atob(data.audio_base64);
-            const bytes = new Uint8Array(binaryString.length);
-            for (let i = 0; i < binaryString.length; i++) {
-                bytes[i] = binaryString.charCodeAt(i);
-            }
-            const blob = new Blob([bytes], { type: 'audio/mpeg' });
-            
-            const url = URL.createObjectURL(blob);
-
-            // 2. Supabase 저장 (비동기 처리)
-            try {
-                const { data: { user } } = await supabase.auth.getUser();
-                if (user) {
-                    const timestamp = new Date().getTime();
-                    const filePath = `${user.id}/${timestamp}.mp3`;
-
-                    // Storage 업로드
-                    const audioFile = new File([blob], "audio.mp3", { type: "audio/mpeg" });
-                    const { error: uploadError } = await supabase.storage
-                        .from('audios')
-                        .upload(filePath, audioFile);
-
-                    if (!uploadError) {
-                        // Public URL 가져오기
-                        const { data: { publicUrl } } = supabase.storage
-                            .from('audios')
-                            .getPublicUrl(filePath);
-
-                        // DB Insert
-                        const { error: dbError } = await supabase.from('generations').insert({
-                            user_id: user.id,
-                            text: text,
-                            audio_url: publicUrl
-                        });
-
-                        if (dbError) {
-                            console.error("DB Error:", dbError);
-                        }
-                    } else {
-                        console.error("Upload Error:", uploadError);
-                    }
-                }
-            } catch (saveWarn) {
-                console.warn("저장 실패 (재생은 가능):", saveWarn);
-            }
-
-            setLoading(false);
-            // 페이지 전환
-            onGenerateSuccess(url, text);
-
-        } catch (err) {
-            alert('오류가 발생했습니다: ' + (err instanceof Error ? err.message : '알 수 없는 오류'));
-            setLoading(false);
-        }
+        
+        // 실제 API 호출 로직은 상위(App.tsx)로 이동됨
+        // 여기서는 "생성 시작" 신호만 보냄
+        onGenerateStart(text);
     };
 
     return (
