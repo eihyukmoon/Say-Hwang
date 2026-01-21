@@ -512,6 +512,90 @@ class GoldenAssembler:
         audio_base64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
         
         return audio_base64, timing_data
+    
+    def BD_handler(self,name,output_path=None):
+        clean_text_input = re.sub(r'[^\w\s]', '', name)
+        print(f"\n 입력: '{clean_text_input}'")
+
+        if len(clean_text_input) > 3:
+            # 3글자 초과 시 앞 3글자만 사용하거나 예외 처리
+            print("[WARN] 3글자 이름만 지원합니다. 앞 3글자만 사용합니다.")
+            clean_text_input = clean_text_input[:3]
+        elif len(clean_text_input) < 3:
+             # 부족하면 마지막 글자로 채움
+             while len(clean_text_input) < 3:
+                 clean_text_input += clean_text_input[-1]
+
+        # MR 로드 (경로 안전장치 추가)
+        mr_filename = "Hwang_BD_MR.wav"
+        # 1. 현재 경로 확인
+        if os.path.exists(mr_filename):
+            mr_path = os.path.abspath(mr_filename)
+        # 2. 오디오 폴더 상위 확인 (audio_folder가 ./youtube_audio 면 ./Hwang_BD_MR.wav 시도)
+        else:
+            # 스크립트 위치 기준
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            mr_path = os.path.join(script_dir, mr_filename)
+        
+        try:
+            # [중요] WinError 2는 pydub가 ffprobe를 못 찾아서 발생할 수 있습니다.
+            # ffmpeg 경로(C:\ffmpeg\bin)를 PATH에 추가하여 ffprobe를 인식시킵니다.
+            ffmpeg_path = os.path.dirname(AudioSegment.converter) 
+            if os.path.exists(ffmpeg_path) and ffmpeg_path not in os.environ["PATH"]:
+                os.environ["PATH"] += os.pathsep + ffmpeg_path
+
+            combined = AudioSegment.from_file(mr_path)
+        except Exception as e:
+            print(f"[ERROR] MR 로드 실패: {e}")
+            return None, []
+
+        timing_data = []
+
+        # _find_best_substitute는 GoldenAssembler의 메서드입니다 (vectorizer 아님)
+        target_chars = [self._find_best_substitute(c) for c in clean_text_input]
+        
+        positions=[9070, 9684, 10210]
+        
+        for i, target_char in enumerate(target_chars):
+            origin_char = clean_text_input[i]
+            
+            if target_char is None:
+                print(f"발음 데이터 없음: {origin_char}")
+                continue
+                
+            info = self.golden_map[target_char]
+            clip = self._get_clip_from_info(info)
+            
+            # 길이 400ms로 고정 (atempo 사용)
+            if clip:
+                clip = self._apply_smart_speed(clip, 400)
+                # 볼륨 조절 (-14dBFS로 맞춤, MR 보컬 대역 고려)
+                clip = self.match_target_amplitude(clip, -14.0)
+
+            src = info["src"]
+            print(f"  Middle 발견: '{origin_char} -> {target_char}' : {src}")
+
+            if clip:
+                start_pos = positions[i]
+                combined = combined.overlay(clip, position=start_pos)
+                timing_data.append({
+                    "char": origin_char,
+                    "start": start_pos,
+                    "end": start_pos + len(clip),
+                    "type": "middle"
+                })
+
+        if output_path:
+            combined.export(output_path, format="mp3")
+            print(f"\n[OK] 합성 완료: '{output_path}' 생성됨.")
+
+        # Return Base64 Encoded Audio and Timing Data
+        buffer = io.BytesIO()
+        combined.export(buffer, format="mp3")
+        audio_base64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
+        
+        return audio_base64, timing_data
+        
 
 if __name__ == "__main__":
     import sys
@@ -520,4 +604,5 @@ if __name__ == "__main__":
         text_to_speak = sys.argv[1]
     
     assembler = GoldenAssembler(audio_folder="youtube_audio")
-    assembler.assemble(text_to_speak, output_path="output.mp3")   
+    #assembler.assemble(text_to_speak, output_path="output.mp3")
+    assembler.BD_handler(text_to_speak,output_path="BD_output.mp3")   

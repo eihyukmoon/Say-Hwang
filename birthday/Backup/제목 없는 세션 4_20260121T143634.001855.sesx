@@ -71,12 +71,12 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="726004" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="happy-birthday-266285 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="726004" startPoint="0" zOrder="0">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1524715" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="happy-birthday-266285 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="1524715" startPoint="0" zOrder="0">
           <component componentGuid="e302102b-da91-4695-9868-925311ab6162" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="b4364f3f-3ea7-4448-8ff2-f9fdad15e8bf" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="2a05be69-0ae3-4775-a444-cecdd9caca8c" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -84,7 +84,7 @@
             <parameter index="0" name="팬" parameterValue="0"/>
           </component>
           <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="726004" shape="19" startPoint="726004" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1524715" shape="19" startPoint="1524715" type="log"/>
           <editParameter parameterIndex="0" slotIndex="4294967280"/>
           <editParameter parameterIndex="0" slotIndex="4294967281"/>
           <channelMap>
@@ -93,7 +93,7 @@
           </channelMap>
         </audioClip>
       </audioTrack>
-      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="true" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
         <trackParameters trackHeight="134" trackHue="267" trackMinimized="false">
           <name>트랙 2</name>
         </trackParameters>
@@ -159,86 +159,17 @@
             <parameter index="44" name="낮은 그래프 범위" parameterValue="1"/>
           </component>
         </trackAudioParameters>
-        <effectsRack preFader="true">
-          <component componentGuid="7ad95f82-fd62-498f-a336-2adafb234306" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" parameterValue="0"/>
-          </component>
-          <component componentGuid="c15602d0-de97-4be5-98b5-4f0c8330fc76" id="rackInput" powered="true">
-            <parameter index="0" parameterValue="1"/>
-            <parameter index="1" parameterValue="0"/>
-          </component>
-          <component componentGuid="3d434e8f-9f8b-4e8c-a545-7aa9f3793054" id="rackOutput" powered="true">
-            <parameter index="0" parameterValue="1"/>
-            <parameter index="1" parameterValue="0"/>
-          </component>
-          <slot powered="true" slotIndex="0">
-            <component componentGuid="5eb8c94a-54fd-4b97-82a8-e67499573f85" componentID="164b4e8a-7105-406b-b23b-1ef2cc4d8957" editorHeight="461" editorLeft="705" editorTop="286" editorWidth="511" name="피치 변환" presetName="(사용자 정의)">
-              <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
-              <parameter index="0" name="전치 비율" parameterValue="0.3729754388332366943359375"/>
-              <parameter index="1" name="정밀도" parameterValue="1"/>
-              <parameter index="2" name="주파수" parameterValue="0.085094936192035675048828125"/>
-              <parameter index="3" name="겹침" parameterValue="0.56573140621185302734375"/>
-              <parameter index="4" name="기본 설정 사용" parameterValue="0.75"/>
-              <parameter index="5" name="포지티브 센트 사용" parameterValue="0.75"/>
-            </component>
-          </slot>
-        </effectsRack>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
         <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="48000" fileID="1" hue="-1" id="0" lockedInTime="false" looped="false" name="생일" offline="false" select="false" sourceInPoint="0" sourceOutPoint="30236" startPoint="17764" zOrder="0">
           <component componentGuid="caab381a-5a3d-4a97-83a0-204359bb84e5" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="58e9380a-334f-41e5-ba14-6dfc458fae1b" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="6b10c22c-afcf-4101-8d77-b058436ec35b" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
           <component componentGuid="ea3a4c3f-60f8-4f17-aca0-e45b87fb4e47" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="30236" shape="19" startPoint="30236" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="-2" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="2.207056746771976829535333308740518987178802490234375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="222236" fileID="1" hue="-1" id="1" lockedInTime="false" looped="false" name="생일" offline="false" select="false" sourceInPoint="0" sourceOutPoint="30236" startPoint="192000" zOrder="1">
-          <component componentGuid="088a8442-2cdf-43dd-b7c6-7ad19354a4c7" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="df0b754e-7ac2-47be-8cef-bd082198b9de" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="51541187-6c50-463c-8169-f70101e4e1d5" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="30236" shape="19" startPoint="30236" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="2.207056746771976829535333308740518987178802490234375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="571041" fileID="1" hue="-1" id="2" lockedInTime="false" looped="false" name="생일" offline="false" select="false" sourceInPoint="0" sourceOutPoint="30236" startPoint="540805" zOrder="2">
-          <component componentGuid="c4318df1-8d0e-4672-92d1-703ed55d23d4" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="b326070c-1f1f-480e-8fdc-f7d45e5055c5" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="45f4c17a-42f7-4a6b-b82f-b6433400a086" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
             <parameter index="0" name="팬" parameterValue="0"/>
           </component>
           <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
@@ -324,7 +255,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="156461cb-02fe-4489-a67b-d61f9a3759a2" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="6438c6e4-3258-49a5-8aab-30e3c15f2010" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -332,7 +263,7 @@
             <parameter index="0" name="팬" parameterValue="0"/>
           </component>
           <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="28537" shape="18" startPoint="28537" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="28537" shape="19" startPoint="28537" type="log"/>
           <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="0.79333351866781576244846974077518098056316375732421875" stretchType="solo" transientSensitivity="40"/>
           <editParameter parameterIndex="0" slotIndex="4294967280"/>
           <editParameter parameterIndex="0" slotIndex="4294967281"/>
@@ -341,108 +272,20 @@
             <channel index="1" sourceIndex="1"/>
           </channelMap>
         </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="107589" fileID="3" hue="-1" id="1" lockedInTime="false" looped="false" name="카 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="31052" startPoint="76537" zOrder="2">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="98491" fileID="3" hue="-1" id="1" lockedInTime="false" looped="false" name="카 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="21954" startPoint="76537" zOrder="1">
           <component componentGuid="b144ca24-1739-4f9e-b3f6-35f39376e0b0" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="9f4f5c2e-30d7-46d0-9ba4-32009ae391ba" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="ab524815-6b39-4ae5-b3cb-4d28de9ed68c" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
           <component componentGuid="4171290b-1c0b-4aef-85ab-56899f1024a6" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
             <parameter index="0" name="팬" parameterValue="0"/>
           </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="18" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="31052" shape="18" startPoint="31052" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="2.29548306148055214492842424078844487667083740234375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="250773" fileID="2" hue="-1" id="2" lockedInTime="false" looped="false" name="추 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="28537" startPoint="222236" zOrder="1">
-          <component componentGuid="54f6e7b5-0dca-4706-8565-2731f4aba62a" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="2330ecdd-f7b1-48a4-ab7f-bd5a842f9f40" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="2fbdbc75-8d23-44f2-9fcf-fdec21f6ff1a" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
           <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="28537" shape="19" startPoint="28537" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="0.79333351866781576244846974077518098056316375732421875" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="272802" fileID="3" hue="-1" id="3" lockedInTime="false" looped="false" name="카 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="22029" startPoint="250773" zOrder="3">
-          <component componentGuid="fabff95a-f966-4c5b-8871-109b722bbfc2" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="4dce40b4-17e1-4a5a-914e-2b40e1948162" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="d0cab6e5-7b2a-4f4c-b1ac-bcde2a9edf7e" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="22029" shape="19" startPoint="22029" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="2.29548306148055214492842424078844487667083740234375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="599578" fileID="2" hue="-1" id="4" lockedInTime="false" looped="false" name="추 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="28537" startPoint="571041" zOrder="4">
-          <component componentGuid="22c236fd-7505-407a-b2d6-b34c3b6eb070" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="3d45078c-50fe-4897-acec-8f9711baacc1" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="f12083df-8b8d-47d6-b5dc-ae1e993286f2" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="28537" shape="19" startPoint="28537" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="0.79333351866781576244846974077518098056316375732421875" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="621607" fileID="3" hue="-1" id="5" lockedInTime="false" looped="false" name="카 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="22029" startPoint="599578" zOrder="5">
-          <component componentGuid="598c37cb-9201-4ff3-9e94-47595982e2d8" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="daae5da4-15e7-4850-9477-22144336e7af" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="a38e893e-99ba-4913-8626-82cc62a22819" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="22029" shape="19" startPoint="22029" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="21954" shape="19" startPoint="21954" type="log"/>
           <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="2.29548306148055214492842424078844487667083740234375" stretchType="solo" transientSensitivity="40"/>
           <editParameter parameterIndex="0" slotIndex="4294967280"/>
           <editParameter parameterIndex="0" slotIndex="4294967281"/>
@@ -452,7 +295,7 @@
           </channelMap>
         </audioClip>
       </audioTrack>
-      <audioTrack automationLaneOpenState="false" id="10004" index="4" select="false" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10004" index="4" select="true" visible="true">
         <trackParameters trackHeight="134" trackHue="182" trackMinimized="false">
           <name>트랙 4</name>
         </trackParameters>
@@ -518,104 +361,24 @@
             <parameter index="44" name="낮은 그래프 범위" parameterValue="1"/>
           </component>
         </trackAudioParameters>
-        <effectsRack preFader="true">
-          <component componentGuid="a6f6e0d0-be48-4c2b-876b-11a70cccb547" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" parameterValue="0"/>
-          </component>
-          <component componentGuid="1488908a-6185-4396-92eb-b375c3080a16" id="rackInput" powered="true">
-            <parameter index="0" parameterValue="1"/>
-            <parameter index="1" parameterValue="0"/>
-          </component>
-          <component componentGuid="1a3ff989-2647-4831-a486-c0100e252726" id="rackOutput" powered="true">
-            <parameter index="0" parameterValue="1"/>
-            <parameter index="1" parameterValue="0"/>
-          </component>
-          <slot powered="true" slotIndex="0">
-            <component componentGuid="f277ae45-c295-4578-8151-0f2dacc926b5" componentID="164b4e8a-7105-406b-b23b-1ef2cc4d8957" editorHeight="461" editorLeft="705" editorTop="286" editorWidth="511" name="피치 변환" presetName="(사용자 정의)">
-              <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
-              <parameter index="0" name="전치 비율" parameterValue="0.414974689483642578125"/>
-              <parameter index="1" name="정밀도" parameterValue="1"/>
-              <parameter index="2" name="주파수" parameterValue="0.08332119882106781005859375"/>
-              <parameter index="3" name="겹침" parameterValue="0.557402431964874267578125"/>
-              <parameter index="4" name="기본 설정 사용" parameterValue="0.75"/>
-              <parameter index="5" name="포지티브 센트 사용" parameterValue="0.75"/>
-            </component>
-          </slot>
-          <slot powered="true" slotIndex="1">
-            <component componentGuid="80d81f2a-3da0-4e21-a585-39119caa0a5f" componentID="164b4e8a-7105-406b-b23b-1ef2cc4d8957" editorHeight="461" editorLeft="705" editorTop="286" editorWidth="511" name="피치 변환" presetName="(사용자 정의)">
-              <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
-              <parameter index="0" name="전치 비율" parameterValue="0.414974689483642578125"/>
-              <parameter index="1" name="정밀도" parameterValue="1"/>
-              <parameter index="2" name="주파수" parameterValue="0.08332119882106781005859375"/>
-              <parameter index="3" name="겹침" parameterValue="0.557402431964874267578125"/>
-              <parameter index="4" name="기본 설정 사용" parameterValue="0.75"/>
-              <parameter index="5" name="포지티브 센트 사용" parameterValue="0.75"/>
-            </component>
-          </slot>
-        </effectsRack>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="380326" fileID="4" hue="-1" id="0" lockedInTime="false" looped="false" name="사랑하는 48000 3" offline="false" select="false" sourceInPoint="0" sourceOutPoint="26873" startPoint="353453" zOrder="0">
-          <component componentGuid="10158f71-2906-4864-be25-bb2dc94108eb" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="136886" fileID="4" hue="-1" id="0" lockedInTime="false" looped="false" name="합니다 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="38395" startPoint="98491" zOrder="2">
+          <component componentGuid="2115dab4-9db4-4c0f-8531-d3532d33ae1a" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="371e57c9-4996-4f9c-939f-856916cb4629" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="26d6b2cd-4c4a-4da0-bfe7-a50060f2eceb" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
-          <component componentGuid="86756ff3-9ca9-4579-8a22-c8397be83d04" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+          <component componentGuid="75f29018-6b8b-4811-83fc-0be884a10421" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
             <parameter index="0" name="팬" parameterValue="0"/>
           </component>
           <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="26873" shape="18" startPoint="26873" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="-2.76923076923077360333991236984729766845703125" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1.6663439065108516246027647866867482662200927734375" stretchType="solo" transientSensitivity="40"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="38395" shape="19" startPoint="38395" type="log"/>
+          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1" stretchType="solo" transientSensitivity="40"/>
           <editParameter parameterIndex="0" slotIndex="4294967280"/>
           <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="391907" fileID="4" hue="-1" id="1" lockedInTime="false" looped="false" name="사랑하는 48000 3" offline="false" select="false" sourceInPoint="30756" sourceOutPoint="42337" startPoint="380326" zOrder="1">
-          <component componentGuid="3dea1052-3ae8-43f5-accd-3d0ea59c21eb" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="ce4824a6-616d-4e2b-b762-116c729f46b3" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="904634d0-fa32-4cce-a556-c487d3928f24" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="11581" shape="19" startPoint="11581" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="3" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1.8000000000000000444089209850062616169452667236328125" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="435481" fileID="4" hue="-1" id="2" lockedInTime="false" looped="false" name="사랑하는 48000 3" offline="false" select="false" sourceInPoint="38676" sourceOutPoint="63661" startPoint="410496" zOrder="2">
-          <component componentGuid="0ed6a59c-ff1b-4394-93e9-478cdfa5fc89" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="ebc7c8ac-e6a7-4cf1-9d68-c1701fcec3c4" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="202a0e60-4f8c-41d7-8364-840f0c3abc36" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="24985" shape="19" startPoint="24985" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="-2.76923076923077360333991236984729766845703125" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1.6663439065108516246027647866867482662200927734375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
           <channelMap>
             <channel index="0" sourceIndex="0"/>
             <channel index="1" sourceIndex="1"/>
@@ -689,270 +452,6 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="126812" fileID="5" hue="-1" id="0" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="17378" startPoint="109434" zOrder="6">
-          <component componentGuid="87de471c-953a-46fd-bdb7-bd1906905220" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="824d56e1-d467-4a77-9673-2c8ec4b043e6" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="f68eba39-ecd3-4034-99f9-b76f6e0eed01" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="17378" shape="19" startPoint="17378" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1.399999999999999911182158029987476766109466552734375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="137841" fileID="5" hue="-1" id="1" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="13064" sourceOutPoint="24093" startPoint="126812" zOrder="7">
-          <component componentGuid="d1b38bff-7e7e-4aca-a357-208240a82842" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="8fc77a0f-56e6-4e93-8efc-6628a02d84ca" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="700775a3-5068-49af-a35d-338d9d85e3e8" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="18" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="11029" shape="18" startPoint="11029" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="0.59999999999999997779553950749686919152736663818359375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="156811" fileID="5" hue="-1" id="2" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="50074" sourceOutPoint="69044" startPoint="137841" zOrder="8">
-          <component componentGuid="477a8717-3963-40c3-b82f-00c0d7032c6f" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="822dcb2a-01b6-4a9f-99f0-d558b5d31db9" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="0812c8b5-5021-4a1e-8e05-ba03ee907e13" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="18970" shape="19" startPoint="18970" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="290180" fileID="5" hue="-1" id="3" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="17378" startPoint="272802" zOrder="12">
-          <component componentGuid="154324f5-e6a8-4747-b310-86abc64b1528" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="56b9ce06-59d4-475d-a174-d70a0e8c94f3" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="bee82eea-5e90-46e8-945d-e6ef65272536" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="17378" shape="19" startPoint="17378" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1.399999999999999911182158029987476766109466552734375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="301209" fileID="5" hue="-1" id="4" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="13064" sourceOutPoint="24093" startPoint="290180" zOrder="13">
-          <component componentGuid="e52ef68b-142c-4921-88c4-f6a7b9f6581c" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="34722a6b-f0b0-4999-b605-2b415128d7d4" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="221ccb79-f0c1-4384-ab3a-f83a4488655f" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="18" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="11029" shape="18" startPoint="11029" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="0.59999999999999997779553950749686919152736663818359375" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="320179" fileID="5" hue="-1" id="5" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="50074" sourceOutPoint="69044" startPoint="301209" zOrder="14">
-          <component componentGuid="32b2633c-3d18-468c-aad8-c200697e1e26" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="8c8d24b9-d050-448c-869c-5aa05f330390" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="75f68998-b520-4f7a-90e9-a18cb98aa72f" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="18970" shape="19" startPoint="18970" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="649126" fileID="5" hue="-1" id="6" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="19861" startPoint="629265" zOrder="3">
-          <component componentGuid="747c3b41-b598-4508-8423-d9e91fa03375" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="43787835-efe2-4259-8f82-12786855e862" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="d9a3af61-a604-4cdd-a0c2-eb31e0bfad05" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="19861" shape="19" startPoint="19861" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1.600000000000000088817841970012523233890533447265625" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="649126" fileID="5" hue="-1" id="7" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="19861" startPoint="629265" zOrder="0">
-          <component componentGuid="e8c33141-c11f-49d2-9900-b0f0e684066e" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="13225f13-36dc-4dd8-9435-ae70065d1476" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="7dc3301e-a7dc-4c0f-ad94-873b7af208a9" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="19861" shape="18" startPoint="19861" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1.600000000000000088817841970012523233890533447265625" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="663831" fileID="5" hue="-1" id="8" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="17419" sourceOutPoint="32124" startPoint="649126" zOrder="4">
-          <component componentGuid="9bffe037-0de4-488c-87ce-7c7209f90b37" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="c32a0cde-9a15-4982-a2a9-8e1c402ab771" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="5605372c-ac41-4b1a-b367-595c68391c24" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="18" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="14705" shape="19" startPoint="14705" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="0.8000000000000000444089209850062616169452667236328125" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="11" endPoint="663831" fileID="5" hue="-1" id="9" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="17419" sourceOutPoint="32124" startPoint="649126" zOrder="1">
-          <component componentGuid="8d0d0e10-76bb-4020-a20c-ccf6a3af039d" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="61dac96c-8fc5-49be-a289-1049feedcc47" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="a5295de4-f432-46e4-81b6-8cf358f3f033" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="18" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="14705" shape="19" startPoint="13511" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="0.8000000000000000444089209850062616169452667236328125" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="678809" fileID="5" hue="-1" id="10" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="50074" sourceOutPoint="69044" startPoint="659839" zOrder="15">
-          <component componentGuid="82cf0092-6be5-45f7-a16e-dcf7bf60b99f" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="41ddc449-231c-4c15-9ed6-113d56f3613d" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="6aa89314-4c7c-4370-98e0-3aa486c69e62" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="18" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="18970" shape="19" startPoint="18970" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="9" crossFadeTailClipID="-1" endPoint="681607" fileID="5" hue="-1" id="11" lockedInTime="false" looped="false" name="합니다 48000 2" offline="false" select="false" sourceInPoint="50074" sourceOutPoint="69044" startPoint="662637" zOrder="2">
-          <component componentGuid="9bf328ea-9669-484a-97f1-fd6a59346e9c" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="b3bc99a9-2b82-4821-a720-298ec7b6f6d0" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="05988a23-8505-4c20-b195-f97e2be6e27d" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="1194" shape="18" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="18970" shape="19" startPoint="18970" type="log"/>
-          <clipStretch adaptiveWindowSize="37" pitchAdjustment="0.9230769230769197974950657226145267486572265625" preserveFormants="true" stretchMode="realtime" stretchQuality="high" stretchRatio="1" stretchType="solo" transientSensitivity="40"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
       </audioTrack>
       <audioTrack automationLaneOpenState="false" id="10006" index="6" select="false" visible="true">
         <trackParameters trackHeight="134" trackHue="92" trackMinimized="false">
@@ -1021,27 +520,6 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="726004" fileID="6" hue="-1" id="0" lockedInTime="false" looped="false" name="할렐루야 48000 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="37915" startPoint="688089" zOrder="17">
-          <component componentGuid="62bd9eb7-ff7e-4988-850d-91cc169fc856" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
-            <parameter index="1" name="static gain" parameterValue="1"/>
-          </component>
-          <component componentGuid="e2a5e8cb-627e-424e-a356-05e247abcee5" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
-            <parameter index="0" parameterValue="0"/>
-            <parameter index="1" name="mute" parameterValue="0"/>
-          </component>
-          <component componentGuid="40ffdc61-0c1b-4274-bba1-cd2aff1c07b5" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
-            <parameter index="0" name="팬" parameterValue="0"/>
-          </component>
-          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="37915" shape="19" startPoint="37915" type="log"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
-          <editParameter parameterIndex="0" slotIndex="4294967281"/>
-          <channelMap>
-            <channel index="0" sourceIndex="0"/>
-            <channel index="1" sourceIndex="1"/>
-          </channelMap>
-        </audioClip>
       </audioTrack>
       <masterTrack automationLaneOpenState="false" id="10000" index="7" select="false" visible="true">
         <trackParameters trackHeight="134" trackHue="-1" trackMinimized="false">
@@ -1112,9 +590,9 @@
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
       </masterTrack>
     </tracks>
-    <sessionState ctiPosition="12965" smpteStart="0">
-      <selectionState selectionDuration="0" selectionStart="12965"/>
-      <viewState horizontalViewDuration="1261042" horizontalViewStart="0" trackControlsWidth="224" verticalScrollOffset="-79"/>
+    <sessionState ctiPosition="360000" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="360000"/>
+      <viewState horizontalViewDuration="460208" horizontalViewStart="0" trackControlsWidth="224" verticalScrollOffset="0"/>
       <timeFormatState beatsPerBar="4" beatsPerMinute="120" customFrameRate="12" linkToDefaultTimeSettings="true" noteLength="4" subdivisions="16" timeCodeDropFrame="false" timeCodeFrameRate="30" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
       <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3" playOverlappingClips="false"/>
     </sessionState>
@@ -1130,10 +608,10 @@
             xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
          <xmp:CreatorTool>Adobe Audition 25.6 (Windows)</xmp:CreatorTool>
          <xmp:CreateDate>2026-01-21T12:13:21+09:00</xmp:CreateDate>
-         <xmp:MetadataDate>2026-01-21T15:50:35+09:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2026-01-21T15:50:35+09:00</xmp:ModifyDate>
-         <xmpMM:InstanceID>xmp.iid:2be0927f-2098-384a-9e38-3690bca9d0b4</xmpMM:InstanceID>
-         <xmpMM:DocumentID>xmp.did:30ab0b72-40ae-c54e-9668-60e1683f7d06</xmpMM:DocumentID>
+         <xmp:MetadataDate>2026-01-21T14:36:34+09:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2026-01-21T14:36:34+09:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:52517a1a-17d8-e24a-a911-754be2b23fa0</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:52517a1a-17d8-e24a-a911-754be2b23fa0</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:ad7edf06-1e52-fb41-b25d-3b35891340a3</xmpMM:OriginalDocumentID>
          <xmpMM:History>
             <rdf:Seq>
@@ -1202,37 +680,23 @@
                </rdf:li>
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:0495e954-3e9b-6b46-a849-d6ca356a8d96</stEvt:instanceID>
-                  <stEvt:when>2026-01-21T15:49:38+09:00</stEvt:when>
+                  <stEvt:instanceID>xmp.iid:4b8c9319-cc93-1540-bb1c-eebe27c471ba</stEvt:instanceID>
+                  <stEvt:when>2026-01-21T14:36:34+09:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition 25.6 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/metadata</stEvt:changed>
                </rdf:li>
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:fe8dae7a-df84-594f-9b50-8f60f4ec801e</stEvt:instanceID>
-                  <stEvt:when>2026-01-21T15:49:38+09:00</stEvt:when>
-                  <stEvt:softwareAgent>Adobe Audition 25.6 (Windows)</stEvt:softwareAgent>
-                  <stEvt:changed>/</stEvt:changed>
-               </rdf:li>
-               <rdf:li rdf:parseType="Resource">
-                  <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:1575557c-0401-054c-b787-60114b8af3af</stEvt:instanceID>
-                  <stEvt:when>2026-01-21T15:50:35+09:00</stEvt:when>
-                  <stEvt:softwareAgent>Adobe Audition 25.6 (Windows)</stEvt:softwareAgent>
-                  <stEvt:changed>/metadata</stEvt:changed>
-               </rdf:li>
-               <rdf:li rdf:parseType="Resource">
-                  <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:2be0927f-2098-384a-9e38-3690bca9d0b4</stEvt:instanceID>
-                  <stEvt:when>2026-01-21T15:50:35+09:00</stEvt:when>
+                  <stEvt:instanceID>xmp.iid:52517a1a-17d8-e24a-a911-754be2b23fa0</stEvt:instanceID>
+                  <stEvt:when>2026-01-21T14:36:34+09:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition 25.6 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/</stEvt:changed>
                </rdf:li>
             </rdf:Seq>
          </xmpMM:History>
          <xmpMM:DerivedFrom rdf:parseType="Resource">
-            <stRef:instanceID>xmp.iid:7870b481-d259-f94d-bb0c-2db2988008a0</stRef:instanceID>
-            <stRef:documentID>xmp.did:ad7edf06-1e52-fb41-b25d-3b35891340a3</stRef:documentID>
+            <stRef:instanceID>xmp.iid:4b8c9319-cc93-1540-bb1c-eebe27c471ba</stRef:instanceID>
+            <stRef:documentID>xmp.did:30ab0b72-40ae-c54e-9668-60e1683f7d06</stRef:documentID>
             <stRef:originalDocumentID>xmp.did:ad7edf06-1e52-fb41-b25d-3b35891340a3</stRef:originalDocumentID>
          </xmpMM:DerivedFrom>
          <dc:format>application/xml</dc:format>
@@ -1357,13 +821,11 @@
   </session>
 
   <files>
-    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\happy-birthday-266285 48000 1.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="가져온 파일/happy-birthday-266285 48000 1.wav"/>
-    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\생일.mp3" id="1" importerPrivateSettings="BitsPerSecond:0:256000;CompressionQuality:0:4;CompressionType:0:1;Encoder:0:1279348037;" mediaHandler="AmioMP3" relativePath="가져온 파일/생일.mp3"/>
-    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\추 48000 1.wav" id="2" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="가져온 파일/추 48000 1.wav"/>
-    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\카 48000 1.wav" id="3" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="가져온 파일/카 48000 1.wav"/>
-    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\Conformed Files\사랑하는 48000 3.wav" id="4" mediaHandler="AmioWav" relativePath="Conformed Files/사랑하는 48000 3.wav"/>
-    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\Conformed Files\합니다 48000 2.wav" id="5" mediaHandler="AmioWav" relativePath="Conformed Files/합니다 48000 2.wav"/>
-    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\Conformed Files\할렐루야 48000 1.wav" id="6" mediaHandler="AmioWav" relativePath="Conformed Files/할렐루야 48000 1.wav"/>
+    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\happy-birthday-266285 48000 1.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="8feb68b6-5208-4840-a604-7c3cb2f48a7e" relativePath="../가져온 파일/happy-birthday-266285 48000 1.wav"/>
+    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\생일.mp3" id="1" importerPrivateSettings="BitsPerSecond:0:256000;CompressionQuality:0:4;CompressionType:0:1;Encoder:0:1279348037;" mediaHandler="AmioMP3" recoveryID="d3e01a5a-2a43-418d-9611-80513f58d209" relativePath="../가져온 파일/생일.mp3"/>
+    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\추 48000 1.wav" id="2" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="026e0070-a306-4115-9de3-95f1f7ce1c7e" relativePath="../가져온 파일/추 48000 1.wav"/>
+    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\카 48000 1.wav" id="3" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="7502fb81-c165-4d8c-b5ad-c5f8b8306ddc" relativePath="../가져온 파일/카 48000 1.wav"/>
+    <file absolutePath="C:\Say-Hwang\Say-Hwang\birthday\가져온 파일\합니다 48000 1.wav" id="4" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="2b877377-df7d-454a-9d49-050c9642017f" relativePath="../가져온 파일/합니다 48000 1.wav"/>
   </files>
 
   <audioDevice inputID="22222222-2222-2222-2222-22222222" outputID="11111111-1111-1111-1111-11111111">
