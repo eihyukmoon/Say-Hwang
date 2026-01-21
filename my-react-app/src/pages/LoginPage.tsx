@@ -77,17 +77,14 @@ export default function LoginPage({ onSignUpClick, onLoginSuccess }: LoginPagePr
   return (
     <>
       {/* Background Layer */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0 z-0 w-full h-full">
         {/* @ts-ignore */}
-        <spline-viewer
-          url="https://prod.spline.design/7RzisIUMo9vQux6i/scene.splinecode"
-          style={{ width: '100%', height: '100%' }}
-        />
+        <spline-viewer url="https://prod.spline.design/7RzisIUMo9vQux6i/scene.splinecode"></spline-viewer>
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 min-h-screen w-full flex items-center justify-center text-zinc-100 p-4">
-        <div className="w-full max-w-sm flex flex-col items-center">
+      <div className="relative z-10 min-h-screen w-full flex items-center justify-center text-zinc-100 p-4 pointer-events-none">
+        <div className="w-full max-w-sm flex flex-col items-center pointer-events-auto">
           <div className="mb-8 text-center space-y-2">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/10 mb-4 ring-1 ring-white/20 backdrop-blur-sm">
               <svg
@@ -166,7 +163,7 @@ export default function LoginPage({ onSignUpClick, onLoginSuccess }: LoginPagePr
             <button
               type="submit"
               disabled={!canSubmit || loading}
-              className="w-full bg-white text-black font-semibold rounded-2xl py-3.5 text-sm hover:bg-zinc-200 active:scale-[0.98] disabled:opacity-50 disabled:active:scale-100 transition-all duration-200"
+              className="w-full bg-white text-black font-semibold rounded-2xl py-3 text-sm hover:bg-zinc-200 active:scale-[0.98] disabled:opacity-50 disabled:active:scale-100 transition-all duration-200"
             >
               {loading ? "로그인 중..." : "로그인"}
             </button>
@@ -183,7 +180,7 @@ export default function LoginPage({ onSignUpClick, onLoginSuccess }: LoginPagePr
             <button
               type="button"
               onClick={handleGoogleLogin}
-              className="w-full bg-white/10 text-white font-medium rounded-2xl py-3.5 text-sm hover:bg-white/20 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2"
+              className="w-full bg-white/10 text-white font-medium rounded-2xl py-3 text-sm hover:bg-white/20 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path
